@@ -4,7 +4,7 @@
  "url": "https://taktek.io/merch/",
  "currency": "USD",
  "checkout": null,
- "debug": true,
+ "debug": false,
  "brand": {
   "paper": "#F7F5F1",
   "ink": "#0D0D0E",
@@ -28,9 +28,60 @@
    "line": "told you so.",
    "challenge": "Say it at exactly the right moment, three times.",
    "game": "games/told-you-so.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 3800,
+   "images": [
+    {
+     "src": "img/told-you-so/1.jpg",
+     "alt": "told you so. cap, Black"
+    },
+    {
+     "src": "img/told-you-so/2.jpg",
+     "alt": "told you so. cap, Moss"
+    },
+    {
+     "src": "img/told-you-so/3.jpg",
+     "alt": "told you so. cap, Black"
+    },
+    {
+     "src": "img/told-you-so/4.jpg",
+     "alt": "told you so. cap, Black"
+    },
+    {
+     "src": "img/told-you-so/5.jpg",
+     "alt": "told you so. cap, Black"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993083,
+     "label": "Moss",
+     "options": {
+      "colour": "Moss"
+     }
+    },
+    {
+     "id": 5558993084,
+     "label": "Black",
+     "options": {
+      "colour": "Black"
+     }
+    }
+   ],
+   "description": "Embroidered on the side, small, where only the people next to you will read it. Washed cotton twill, curved brim.",
+   "details": [
+    "Comfort Colors Coastal Washed Cap",
+    "Side embroidery, white with a green dot",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Moss",
+      "Black"
+     ]
+    }
+   ]
   },
   {
    "slug": "spare-key",
@@ -38,9 +89,181 @@
    "line": "the spare key was never spare.",
    "challenge": "Find the spare key.",
    "game": "games/spare-key.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 9200,
+   "images": [
+    {
+     "src": "img/spare-key/1.jpg",
+     "alt": "the spare key hoodie, Black"
+    },
+    {
+     "src": "img/spare-key/2.jpg",
+     "alt": "the spare key hoodie, Chocolate Brown"
+    },
+    {
+     "src": "img/spare-key/3.jpg",
+     "alt": "the spare key hoodie, Moss Gray"
+    },
+    {
+     "src": "img/spare-key/4.jpg",
+     "alt": "the spare key hoodie, Black"
+    },
+    {
+     "src": "img/spare-key/5.jpg",
+     "alt": "the spare key hoodie, Black"
+    },
+    {
+     "src": "img/spare-key/6.jpg",
+     "alt": "the spare key hoodie, Black"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993276,
+     "label": "Chocolate Brown / S",
+     "options": {
+      "colour": "Chocolate Brown",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558993277,
+     "label": "Chocolate Brown / M",
+     "options": {
+      "colour": "Chocolate Brown",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558993279,
+     "label": "Chocolate Brown / L",
+     "options": {
+      "colour": "Chocolate Brown",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558993281,
+     "label": "Chocolate Brown / XL",
+     "options": {
+      "colour": "Chocolate Brown",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558993283,
+     "label": "Chocolate Brown / 2XL",
+     "options": {
+      "colour": "Chocolate Brown",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558993285,
+     "label": "Moss Gray / S",
+     "options": {
+      "colour": "Moss Gray",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558993286,
+     "label": "Moss Gray / M",
+     "options": {
+      "colour": "Moss Gray",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558993287,
+     "label": "Moss Gray / L",
+     "options": {
+      "colour": "Moss Gray",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558993289,
+     "label": "Moss Gray / XL",
+     "options": {
+      "colour": "Moss Gray",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558993290,
+     "label": "Moss Gray / 2XL",
+     "options": {
+      "colour": "Moss Gray",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558993292,
+     "label": "Black / S",
+     "options": {
+      "colour": "Black",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558993293,
+     "label": "Black / M",
+     "options": {
+      "colour": "Black",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558993295,
+     "label": "Black / L",
+     "options": {
+      "colour": "Black",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558993296,
+     "label": "Black / XL",
+     "options": {
+      "colour": "Black",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558993298,
+     "label": "Black / 2XL",
+     "options": {
+      "colour": "Black",
+      "size": "2XL"
+     }
+    }
+   ],
+   "description": "Super heavyweight fleece that holds its shape. The line sits high on the back; a single green dot on the chest.",
+   "details": [
+    "Lane Seven LS17001, super heavyweight",
+    "Printed back, green dot on the chest",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Chocolate Brown",
+      "Moss Gray",
+      "Black"
+     ]
+    },
+    {
+     "name": "size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ]
   },
   {
    "slug": "five-more-minutes",
@@ -48,9 +271,64 @@
    "line": "five more minutes.",
    "challenge": "Snooze, then don't move for five real minutes.",
    "game": "games/five-more-minutes.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 9800,
+   "images": [
+    {
+     "src": "img/five-more-minutes/1.jpg",
+     "alt": "five more minutes blanket, Fireside Brown"
+    },
+    {
+     "src": "img/five-more-minutes/2.jpg",
+     "alt": "five more minutes blanket, Heather Grey"
+    },
+    {
+     "src": "img/five-more-minutes/3.jpg",
+     "alt": "five more minutes blanket, Fireside Brown"
+    },
+    {
+     "src": "img/five-more-minutes/4.jpg",
+     "alt": "five more minutes blanket, Fireside Brown"
+    },
+    {
+     "src": "img/five-more-minutes/5.jpg",
+     "alt": "five more minutes blanket, Fireside Brown"
+    },
+    {
+     "src": "img/five-more-minutes/6.jpg",
+     "alt": "five more minutes blanket, Fireside Brown"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993362,
+     "label": "Fireside Brown",
+     "options": {
+      "colour": "Fireside Brown"
+     }
+    },
+    {
+     "id": 5558993363,
+     "label": "Heather Grey",
+     "options": {
+      "colour": "Heather Grey"
+     }
+    }
+   ],
+   "description": "A thick sherpa throw for the sofa, with the line stitched into one corner.",
+   "details": [
+    "Port Authority premium sherpa, 50″×60″",
+    "Corner embroidery",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Fireside Brown",
+      "Heather Grey"
+     ]
+    }
+   ]
   },
   {
    "slug": "fix-it-this-weekend",
@@ -58,9 +336,48 @@
    "line": "i'll fix it this weekend.",
    "challenge": "Opens on weekends only, your time.",
    "game": "games/fix-it-this-weekend.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 5200,
+   "images": [
+    {
+     "src": "img/fix-it-this-weekend/1.jpg",
+     "alt": "fix it this weekend apron, Dark Green"
+    },
+    {
+     "src": "img/fix-it-this-weekend/2.jpg",
+     "alt": "fix it this weekend apron, Duck Brown"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993468,
+     "label": "Duck Brown",
+     "options": {
+      "colour": "Duck Brown"
+     }
+    },
+    {
+     "id": 5558993474,
+     "label": "Dark Green",
+     "options": {
+      "colour": "Dark Green"
+     }
+    }
+   ],
+   "description": "A heavy twill bib apron with pockets, for the weekend that keeps not happening.",
+   "details": [
+    "Port Authority A900 Signature heavy twill",
+    "Printed chest",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Duck Brown",
+      "Dark Green"
+     ]
+    }
+   ]
   },
   {
    "slug": "first-one-up",
@@ -68,9 +385,47 @@
    "line": "first one up.",
    "challenge": "Turn the alarm off before anyone else wakes. Three mornings.",
    "game": "games/first-one-up.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 3000,
+   "images": [
+    {
+     "src": "img/first-one-up/1.jpg",
+     "alt": "first one up mug, White"
+    },
+    {
+     "src": "img/first-one-up/2.jpg",
+     "alt": "first one up mug, White"
+    },
+    {
+     "src": "img/first-one-up/3.jpg",
+     "alt": "first one up mug, White"
+    },
+    {
+     "src": "img/first-one-up/4.jpg",
+     "alt": "first one up mug, White"
+    },
+    {
+     "src": "img/first-one-up/5.jpg",
+     "alt": "first one up mug, White"
+    },
+    {
+     "src": "img/first-one-up/6.jpg",
+     "alt": "first one up mug, White"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5559033939,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "An enamel mug for the person who makes the first coffee in the house.",
+   "details": [
+    "Enamel, 12 oz",
+    "Printed all round",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "food-at-home",
@@ -78,9 +433,52 @@
    "line": "we have food at home.",
    "challenge": "Let everything roll past. Take only the tote.",
    "game": "games/food-at-home.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 8200,
+   "images": [
+    {
+     "src": "img/food-at-home/1.jpg",
+     "alt": "food at home tote, Bay"
+    },
+    {
+     "src": "img/food-at-home/2.jpg",
+     "alt": "food at home tote, Ivory"
+    },
+    {
+     "src": "img/food-at-home/3.jpg",
+     "alt": "food at home tote, Bay"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993841,
+     "label": "Bay",
+     "options": {
+      "colour": "Bay"
+     }
+    },
+    {
+     "id": 5558993842,
+     "label": "Ivory",
+     "options": {
+      "colour": "Ivory"
+     }
+    }
+   ],
+   "description": "A big garment-dyed canvas carry-all, for the shop you were told not to do.",
+   "details": [
+    "Comfort Colors carry-all tote",
+    "Printed front",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Bay",
+      "Ivory"
+     ]
+    }
+   ]
   },
   {
    "slug": "on-my-way",
@@ -88,9 +486,181 @@
    "line": "on my way.",
    "challenge": "Ten seconds to find your keys, phone, wallet and sunglasses.",
    "game": "games/on-my-way.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 4400,
+   "images": [
+    {
+     "src": "img/on-my-way/1.jpg",
+     "alt": "on my way tee, Chalky Mint"
+    },
+    {
+     "src": "img/on-my-way/2.jpg",
+     "alt": "on my way tee, Butter"
+    },
+    {
+     "src": "img/on-my-way/3.jpg",
+     "alt": "on my way tee, Ivory"
+    },
+    {
+     "src": "img/on-my-way/4.jpg",
+     "alt": "on my way tee, Chalky Mint"
+    },
+    {
+     "src": "img/on-my-way/5.jpg",
+     "alt": "on my way tee, Chalky Mint"
+    },
+    {
+     "src": "img/on-my-way/6.jpg",
+     "alt": "on my way tee, Chalky Mint"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558983292,
+     "label": "Ivory / S",
+     "options": {
+      "colour": "Ivory",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558983298,
+     "label": "Ivory / M",
+     "options": {
+      "colour": "Ivory",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558983299,
+     "label": "Ivory / L",
+     "options": {
+      "colour": "Ivory",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558983301,
+     "label": "Ivory / XL",
+     "options": {
+      "colour": "Ivory",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558983303,
+     "label": "Ivory / 2XL",
+     "options": {
+      "colour": "Ivory",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558983305,
+     "label": "Butter / S",
+     "options": {
+      "colour": "Butter",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558983307,
+     "label": "Butter / M",
+     "options": {
+      "colour": "Butter",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558983310,
+     "label": "Butter / L",
+     "options": {
+      "colour": "Butter",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558983311,
+     "label": "Butter / XL",
+     "options": {
+      "colour": "Butter",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558983313,
+     "label": "Butter / 2XL",
+     "options": {
+      "colour": "Butter",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558983315,
+     "label": "Chalky Mint / S",
+     "options": {
+      "colour": "Chalky Mint",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558983316,
+     "label": "Chalky Mint / M",
+     "options": {
+      "colour": "Chalky Mint",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558983317,
+     "label": "Chalky Mint / L",
+     "options": {
+      "colour": "Chalky Mint",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558983319,
+     "label": "Chalky Mint / XL",
+     "options": {
+      "colour": "Chalky Mint",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558983320,
+     "label": "Chalky Mint / 2XL",
+     "options": {
+      "colour": "Chalky Mint",
+      "size": "2XL"
+     }
+    }
+   ],
+   "description": "Garment-dyed heavyweight cotton. The line is high on the back, so the people behind you read it as you leave.",
+   "details": [
+    "Comfort Colors 1717, 6.1 oz garment-dyed cotton",
+    "Printed back, embroidered green dot on the chest",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Ivory",
+      "Butter",
+      "Chalky Mint"
+     ]
+    },
+    {
+     "name": "size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ]
   },
   {
    "slug": "lock-the-door",
@@ -98,9 +668,72 @@
    "line": "did you lock the door?",
    "challenge": "Lock up, drive off, and go back to check.",
    "game": "games/lock-the-door.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 4200,
+   "images": [
+    {
+     "src": "img/lock-the-door/1.jpg",
+     "alt": "did you lock the door beanie, Petrol Blue"
+    },
+    {
+     "src": "img/lock-the-door/2.jpg",
+     "alt": "did you lock the door beanie, Walnut"
+    },
+    {
+     "src": "img/lock-the-door/3.jpg",
+     "alt": "did you lock the door beanie, Cypress"
+    },
+    {
+     "src": "img/lock-the-door/4.jpg",
+     "alt": "did you lock the door beanie, Petrol Blue"
+    },
+    {
+     "src": "img/lock-the-door/5.jpg",
+     "alt": "did you lock the door beanie, Petrol Blue"
+    },
+    {
+     "src": "img/lock-the-door/6.jpg",
+     "alt": "did you lock the door beanie, Petrol Blue"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558993953,
+     "label": "Cypress",
+     "options": {
+      "colour": "Cypress"
+     }
+    },
+    {
+     "id": 5558993955,
+     "label": "Petrol Blue",
+     "options": {
+      "colour": "Petrol Blue"
+     }
+    },
+    {
+     "id": 5558993956,
+     "label": "Walnut",
+     "options": {
+      "colour": "Walnut"
+     }
+    }
+   ],
+   "description": "A chunky fisherman beanie with the question stitched on the cuff.",
+   "details": [
+    "AS Colour 1120 fisherman beanie",
+    "Embroidered cuff",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Cypress",
+      "Petrol Blue",
+      "Walnut"
+     ]
+    }
+   ]
   },
   {
    "slug": "ask-your-mother",
@@ -108,9 +741,181 @@
    "line": "ask your mother.",
    "challenge": "Break the loop.",
    "game": "games/ask-your-mother.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 7200,
+   "images": [
+    {
+     "src": "img/ask-your-mother/1.jpg",
+     "alt": "ask your mother crewneck, Pepper"
+    },
+    {
+     "src": "img/ask-your-mother/2.jpg",
+     "alt": "ask your mother crewneck, Blue Spruce"
+    },
+    {
+     "src": "img/ask-your-mother/3.jpg",
+     "alt": "ask your mother crewneck, Blue Jean"
+    },
+    {
+     "src": "img/ask-your-mother/4.jpg",
+     "alt": "ask your mother crewneck, Pepper"
+    },
+    {
+     "src": "img/ask-your-mother/5.jpg",
+     "alt": "ask your mother crewneck, Pepper"
+    },
+    {
+     "src": "img/ask-your-mother/6.jpg",
+     "alt": "ask your mother crewneck, Pepper"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558994215,
+     "label": "Blue Spruce / S",
+     "options": {
+      "colour": "Blue Spruce",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558994219,
+     "label": "Blue Spruce / M",
+     "options": {
+      "colour": "Blue Spruce",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558994222,
+     "label": "Blue Spruce / L",
+     "options": {
+      "colour": "Blue Spruce",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558994225,
+     "label": "Blue Spruce / XL",
+     "options": {
+      "colour": "Blue Spruce",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558994228,
+     "label": "Blue Spruce / 2XL",
+     "options": {
+      "colour": "Blue Spruce",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558994229,
+     "label": "Pepper / S",
+     "options": {
+      "colour": "Pepper",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558994231,
+     "label": "Pepper / M",
+     "options": {
+      "colour": "Pepper",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558994232,
+     "label": "Pepper / L",
+     "options": {
+      "colour": "Pepper",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558994234,
+     "label": "Pepper / XL",
+     "options": {
+      "colour": "Pepper",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558994236,
+     "label": "Pepper / 2XL",
+     "options": {
+      "colour": "Pepper",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5558994237,
+     "label": "Blue Jean / S",
+     "options": {
+      "colour": "Blue Jean",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558994238,
+     "label": "Blue Jean / M",
+     "options": {
+      "colour": "Blue Jean",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558994239,
+     "label": "Blue Jean / L",
+     "options": {
+      "colour": "Blue Jean",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558994240,
+     "label": "Blue Jean / XL",
+     "options": {
+      "colour": "Blue Jean",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558994241,
+     "label": "Blue Jean / 2XL",
+     "options": {
+      "colour": "Blue Jean",
+      "size": "2XL"
+     }
+    }
+   ],
+   "description": "A garment-dyed crewneck, soft from the first wear. The line sits small on the chest.",
+   "details": [
+    "Comfort Colors 1566 garment-dyed fleece",
+    "Printed chest",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Blue Spruce",
+      "Pepper",
+      "Blue Jean"
+     ]
+    },
+    {
+     "name": "size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ]
   },
   {
    "slug": "not-lost",
@@ -118,9 +923,64 @@
    "line": "we're not lost.",
    "challenge": "Get out of the maze without asking for directions.",
    "game": "games/not-lost.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 4200,
+   "images": [
+    {
+     "src": "img/not-lost/1.jpg",
+     "alt": "we're not lost bucket hat, Dill"
+    },
+    {
+     "src": "img/not-lost/2.jpg",
+     "alt": "we're not lost bucket hat, Slate Blue"
+    },
+    {
+     "src": "img/not-lost/3.jpg",
+     "alt": "we're not lost bucket hat, Dill"
+    },
+    {
+     "src": "img/not-lost/4.jpg",
+     "alt": "we're not lost bucket hat, Dill"
+    },
+    {
+     "src": "img/not-lost/5.jpg",
+     "alt": "we're not lost bucket hat, Dill"
+    },
+    {
+     "src": "img/not-lost/6.jpg",
+     "alt": "we're not lost bucket hat, Dill"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558994330,
+     "label": "Dill",
+     "options": {
+      "colour": "Dill"
+     }
+    },
+    {
+     "id": 5558994333,
+     "label": "Slate Blue",
+     "options": {
+      "colour": "Slate Blue"
+     }
+    }
+   ],
+   "description": "An organic cotton bucket hat for the walk that was definitely the right way.",
+   "details": [
+    "Organic cotton twill bucket hat",
+    "Embroidered front",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "Dill",
+      "Slate Blue"
+     ]
+    }
+   ]
   },
   {
    "slug": "leave-the-light-on",
@@ -128,9 +988,43 @@
    "line": "leave the light on.",
    "challenge": "Keep the flame alive for thirty seconds.",
    "game": "games/leave-the-light-on.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 3400,
+   "images": [
+    {
+     "src": "img/leave-the-light-on/1.jpg",
+     "alt": "leave the light on candle, White"
+    },
+    {
+     "src": "img/leave-the-light-on/2.jpg",
+     "alt": "leave the light on candle, White"
+    },
+    {
+     "src": "img/leave-the-light-on/3.jpg",
+     "alt": "leave the light on candle, White"
+    },
+    {
+     "src": "img/leave-the-light-on/4.jpg",
+     "alt": "leave the light on candle, White"
+    },
+    {
+     "src": "img/leave-the-light-on/5.jpg",
+     "alt": "leave the light on candle, White"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558994401,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "Soy wax in a glass jar, unscented, for the window of whoever's coming home late.",
+   "details": [
+    "Soy wax, glass jar",
+    "Printed label",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "just-one-more",
@@ -138,9 +1032,27 @@
    "line": "just one more.",
    "challenge": "Higher or lower. Walk away while you're ahead.",
    "game": "games/just-one-more.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 2600,
+   "images": [
+    {
+     "src": "img/just-one-more/1.jpg",
+     "alt": "just one more cards, White"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558995852,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "A full poker deck with our own back. Good for the game that should have ended an hour ago.",
+   "details": [
+    "54 cards, 2.5″×3.5″",
+    "Custom card backs",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "ill-dry",
@@ -148,9 +1060,64 @@
    "line": "i'll dry.",
    "challenge": "Dry twelve plates in a row.",
    "game": "games/ill-dry.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 2800,
+   "images": [
+    {
+     "src": "img/ill-dry/1.jpg",
+     "alt": "i'll dry towel, Cappuccino"
+    },
+    {
+     "src": "img/ill-dry/2.jpg",
+     "alt": "i'll dry towel, White"
+    },
+    {
+     "src": "img/ill-dry/3.jpg",
+     "alt": "i'll dry towel, Cappuccino"
+    },
+    {
+     "src": "img/ill-dry/4.jpg",
+     "alt": "i'll dry towel, Cappuccino"
+    },
+    {
+     "src": "img/ill-dry/5.jpg",
+     "alt": "i'll dry towel, Cappuccino"
+    },
+    {
+     "src": "img/ill-dry/6.jpg",
+     "alt": "i'll dry towel, Cappuccino"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558995983,
+     "label": "White",
+     "options": {
+      "colour": "White"
+     }
+    },
+    {
+     "id": 5558995984,
+     "label": "Cappuccino",
+     "options": {
+      "colour": "Cappuccino"
+     }
+    }
+   ],
+   "description": "A thick Imabari cotton hand towel with the offer stitched in the corner.",
+   "details": [
+    "Imabari cotton, from Japan",
+    "Corner embroidery",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "White",
+      "Cappuccino"
+     ]
+    }
+   ]
   },
   {
    "slug": "one-sec",
@@ -158,9 +1125,48 @@
    "line": "one sec.",
    "challenge": "Stop the clock at exactly one second.",
    "game": "games/one-sec.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 5600,
+   "images": [
+    {
+     "src": "img/one-sec/1.jpg",
+     "alt": "one sec clock, Wooden Base/Clock Hand Black"
+    },
+    {
+     "src": "img/one-sec/2.jpg",
+     "alt": "one sec clock, White Base/Clock Hand Black"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558996067,
+     "label": "White Base/Clock Hand Black",
+     "options": {
+      "colour": "White Base/Clock Hand Black"
+     }
+    },
+    {
+     "id": 5558996068,
+     "label": "Wooden Base/Clock Hand Black",
+     "options": {
+      "colour": "Wooden Base/Clock Hand Black"
+     }
+    }
+   ],
+   "description": "A 10-inch wall clock. No numbers, just the minutes and the promise.",
+   "details": [
+    "10″ wall clock",
+    "Printed face",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "colour",
+     "values": [
+      "White Base/Clock Hand Black",
+      "Wooden Base/Clock Hand Black"
+     ]
+    }
+   ]
   },
   {
    "slug": "wifi-password",
@@ -168,9 +1174,38 @@
    "line": "the wifi password is on the fridge.",
    "challenge": "Find the wifi password on the fridge.",
    "game": "games/wifi-password.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 1400,
+   "images": [
+    {
+     "src": "img/wifi-password/1.jpg",
+     "alt": "wifi password magnets, White"
+    },
+    {
+     "src": "img/wifi-password/2.jpg",
+     "alt": "wifi password magnets, White"
+    },
+    {
+     "src": "img/wifi-password/3.jpg",
+     "alt": "wifi password magnets, White"
+    },
+    {
+     "src": "img/wifi-password/4.jpg",
+     "alt": "wifi password magnets, White"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558996365,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "A 4-inch magnet that tells your guests where to look.",
+   "details": [
+    "Die-cut magnet, 4″×4″",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "the-good-side",
@@ -178,9 +1213,56 @@
    "line": "the good side.",
    "challenge": "Keep the pillow cool all night.",
    "game": "games/the-good-side.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 5200,
+   "images": [
+    {
+     "src": "img/the-good-side/1.jpg",
+     "alt": "the good side pillow"
+    },
+    {
+     "src": "img/the-good-side/2.jpg",
+     "alt": "the good side pillow"
+    },
+    {
+     "src": "img/the-good-side/3.jpg",
+     "alt": "the good side pillow"
+    },
+    {
+     "src": "img/the-good-side/4.jpg",
+     "alt": "the good side pillow"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558996529,
+     "label": "18″×18″",
+     "options": {
+      "size": "18″×18″"
+     }
+    },
+    {
+     "id": 5558996530,
+     "label": "22″×22″",
+     "options": {
+      "size": "22″×22″"
+     }
+    }
+   ],
+   "description": "A cotton pillow. One side says it's the good side. The other side admits it.",
+   "details": [
+    "Cotton, printed both sides",
+    "Insert included",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "18″×18″",
+      "22″×22″"
+     ]
+    }
+   ]
   },
   {
    "slug": "thermostat",
@@ -188,9 +1270,88 @@
    "line": "who touched the thermostat.",
    "challenge": "Hold the house at 22° for twenty seconds.",
    "game": "games/thermostat.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 11800,
+   "images": [
+    {
+     "src": "img/thermostat/1.jpg",
+     "alt": "thermostat sweater, Custom"
+    },
+    {
+     "src": "img/thermostat/2.jpg",
+     "alt": "thermostat sweater, Custom"
+    },
+    {
+     "src": "img/thermostat/3.jpg",
+     "alt": "thermostat sweater, Custom"
+    },
+    {
+     "src": "img/thermostat/4.jpg",
+     "alt": "thermostat sweater, Custom"
+    },
+    {
+     "src": "img/thermostat/5.jpg",
+     "alt": "thermostat sweater, Custom"
+    },
+    {
+     "src": "img/thermostat/6.jpg",
+     "alt": "thermostat sweater, Custom"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558996731,
+     "label": "S",
+     "options": {
+      "size": "S"
+     }
+    },
+    {
+     "id": 5558996743,
+     "label": "M",
+     "options": {
+      "size": "M"
+     }
+    },
+    {
+     "id": 5558996746,
+     "label": "L",
+     "options": {
+      "size": "L"
+     }
+    },
+    {
+     "id": 5558996749,
+     "label": "XL",
+     "options": {
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5558996751,
+     "label": "2XL",
+     "options": {
+      "size": "2XL"
+     }
+    }
+   ],
+   "description": "A knitted crew neck in pine and bone, with the question knitted into the front.",
+   "details": [
+    "Custom knitted jacquard, cotton blend",
+    "Knitted, not printed",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+     ]
+    }
+   ]
   },
   {
    "slug": "just-a-splash",
@@ -198,9 +1359,47 @@
    "line": "just a splash.",
    "challenge": "Pour a splash. Just a splash.",
    "game": "games/just-a-splash.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 2600,
+   "images": [
+    {
+     "src": "img/just-a-splash/1.jpg",
+     "alt": "just a splash glass"
+    },
+    {
+     "src": "img/just-a-splash/2.jpg",
+     "alt": "just a splash glass"
+    },
+    {
+     "src": "img/just-a-splash/3.jpg",
+     "alt": "just a splash glass"
+    },
+    {
+     "src": "img/just-a-splash/4.jpg",
+     "alt": "just a splash glass"
+    },
+    {
+     "src": "img/just-a-splash/5.jpg",
+     "alt": "just a splash glass"
+    },
+    {
+     "src": "img/just-a-splash/6.jpg",
+     "alt": "just a splash glass"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558996896,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "A heavy rocks glass with one thin line near the bottom. That's the splash.",
+   "details": [
+    "Rocks glass, 10.5 oz",
+    "Printed",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "not-tennis",
@@ -208,9 +1407,27 @@
    "line": "it's not tennis.",
    "challenge": "Ten returns in a row.",
    "game": "games/not-tennis.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 8800,
+   "images": [
+    {
+     "src": "img/not-tennis/1.jpg",
+     "alt": "it's not tennis paddles, Wood"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558997037,
+     "label": "",
+     "options": {}
+    }
+   ],
+   "description": "Two wooden pickleball paddles and balls, for the people who keep calling it tennis.",
+   "details": [
+    "Set of 2 paddles + balls",
+    "Printed face",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": []
   },
   {
    "slug": "the-last-piece",
@@ -218,9 +1435,44 @@
    "line": "the last piece.",
    "challenge": "Solve the puzzle.",
    "game": "games/the-last-piece.js",
-   "price": 0,
-   "images": [],
-   "variants": []
+   "price": 4600,
+   "images": [
+    {
+     "src": "img/the-last-piece/1.jpg",
+     "alt": "the last piece puzzle, White (glossy)"
+    }
+   ],
+   "variants": [
+    {
+     "id": 5558997263,
+     "label": "21″×15.5″ (500 pcs)",
+     "options": {
+      "size": "21″×15.5″ (500 pcs)"
+     }
+    },
+    {
+     "id": 5558997265,
+     "label": "30″×20″ (1000 pcs)",
+     "options": {
+      "size": "30″×20″ (1000 pcs)"
+     }
+    }
+   ],
+   "description": "An all-ivory jigsaw with one green dot. It comes in a tin. Good luck.",
+   "details": [
+    "500 or 1000 pieces, in a tin",
+    "Printed",
+    "Made to order by Printful; ships in about a week. Shipping included."
+   ],
+   "options": [
+    {
+     "name": "size",
+     "values": [
+      "21″×15.5″ (500 pcs)",
+      "30″×20″ (1000 pcs)"
+     ]
+    }
+   ]
   }
  ]
 }
