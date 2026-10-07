@@ -16,7 +16,7 @@
  },
  "printfulStoreId": 18869090,
  "headline": "You can't just buy these.",
- "intro": "Twenty things from ordinary life at home. Each one has to be won first. Win it, and it's yours to buy.",
+ "intro": "Fourteen things from ordinary life at home. Each one has to be won first. Win it, and it's yours to buy.",
  "homeLink": {
   "href": "https://taktek.io/",
   "label": "taktek.io"
@@ -77,7 +77,8 @@
       "Black"
      ]
     }
-   ]
+   ],
+   "key": "T01"
   },
   {
    "slug": "spare-key",
@@ -259,7 +260,8 @@
       "2XL"
      ]
     }
-   ]
+   ],
+   "key": "T02"
   },
   {
    "slug": "five-more-minutes",
@@ -324,14 +326,15 @@
       "Heather Grey"
      ]
     }
-   ]
+   ],
+   "key": "T03"
   },
   {
-   "slug": "fix-it-this-weekend",
-   "name": "fix it this weekend apron",
-   "line": "i'll fix it this weekend.",
-   "challenge": "Opens on weekends only, your time.",
-   "game": "games/fix-it-this-weekend.js",
+   "slug": "it-needs-salt",
+   "name": "it needs salt apron",
+   "line": "it needs salt.",
+   "challenge": "Season the soup. Stop when it tastes right.",
+   "game": "games/it-needs-salt.js",
    "price": 5200,
    "images": [
     {
@@ -373,7 +376,8 @@
       "Dark Green"
      ]
     }
-   ]
+   ],
+   "key": "T04"
   },
   {
    "slug": "first-one-up",
@@ -421,7 +425,8 @@
     "Printed all round",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
-   "options": []
+   "options": [],
+   "key": "T05"
   },
   {
    "slug": "food-at-home",
@@ -474,14 +479,15 @@
       "Ivory"
      ]
     }
-   ]
+   ],
+   "key": "T06"
   },
   {
-   "slug": "on-my-way",
-   "name": "on my way tee",
-   "line": "on my way.",
+   "slug": "five-minutes-away",
+   "name": "5 minutes away tee",
+   "line": "5 minutes away",
    "challenge": "Ten seconds to find your keys, phone, wallet and sunglasses.",
-   "game": "games/on-my-way.js",
+   "game": "games/five-minutes-away.js",
    "price": 4400,
    "images": [
     {
@@ -656,7 +662,8 @@
       "2XL"
      ]
     }
-   ]
+   ],
+   "key": "T07"
   },
   {
    "slug": "lock-the-door",
@@ -729,7 +736,8 @@
       "Walnut"
      ]
     }
-   ]
+   ],
+   "key": "T08"
   },
   {
    "slug": "ask-your-mother",
@@ -911,7 +919,8 @@
       "2XL"
      ]
     }
-   ]
+   ],
+   "key": "T09"
   },
   {
    "slug": "not-lost",
@@ -976,14 +985,15 @@
       "Slate Blue"
      ]
     }
-   ]
+   ],
+   "key": "T10"
   },
   {
-   "slug": "leave-the-light-on",
-   "name": "leave the light on candle",
-   "line": "leave the light on.",
+   "slug": "midnight-oil",
+   "name": "midnight oil candle",
+   "line": "burning the midnight oil.",
    "challenge": "Keep the flame alive for thirty seconds.",
-   "game": "games/leave-the-light-on.js",
+   "game": "games/midnight-oil.js",
    "price": 3400,
    "images": [
     {
@@ -1020,7 +1030,8 @@
     "Printed label",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
-   "options": []
+   "options": [],
+   "key": "T11"
   },
   {
    "slug": "just-one-more",
@@ -1048,121 +1059,8 @@
     "Custom card backs",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
-   "options": []
-  },
-  {
-   "slug": "ill-dry",
-   "name": "i'll dry towel",
-   "line": "i'll dry.",
-   "challenge": "Dry twelve plates in a row.",
-   "game": "games/ill-dry.js",
-   "price": 2800,
-   "images": [
-    {
-     "src": "img/ill-dry/1.jpg",
-     "alt": "i'll dry towel, Cappuccino"
-    },
-    {
-     "src": "img/ill-dry/2.jpg",
-     "alt": "i'll dry towel, White"
-    },
-    {
-     "src": "img/ill-dry/3.jpg",
-     "alt": "i'll dry towel, Cappuccino"
-    },
-    {
-     "src": "img/ill-dry/4.jpg",
-     "alt": "i'll dry towel, Cappuccino"
-    },
-    {
-     "src": "img/ill-dry/5.jpg",
-     "alt": "i'll dry towel, Cappuccino"
-    },
-    {
-     "src": "img/ill-dry/6.jpg",
-     "alt": "i'll dry towel, Cappuccino"
-    }
-   ],
-   "variants": [
-    {
-     "id": 5558995983,
-     "label": "White",
-     "options": {
-      "colour": "White"
-     }
-    },
-    {
-     "id": 5558995984,
-     "label": "Cappuccino",
-     "options": {
-      "colour": "Cappuccino"
-     }
-    }
-   ],
-   "description": "A thick Imabari cotton hand towel with the offer stitched in the corner.",
-   "details": [
-    "Imabari cotton, from Japan",
-    "Corner embroidery",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": [
-    {
-     "name": "colour",
-     "values": [
-      "White",
-      "Cappuccino"
-     ]
-    }
-   ]
-  },
-  {
-   "slug": "one-sec",
-   "name": "one sec clock",
-   "line": "one sec.",
-   "challenge": "Stop the clock at exactly one second.",
-   "game": "games/one-sec.js",
-   "price": 5600,
-   "images": [
-    {
-     "src": "img/one-sec/1.jpg",
-     "alt": "one sec clock, Wooden Base/Clock Hand Black"
-    },
-    {
-     "src": "img/one-sec/2.jpg",
-     "alt": "one sec clock, White Base/Clock Hand Black"
-    }
-   ],
-   "variants": [
-    {
-     "id": 5558996067,
-     "label": "White Base/Clock Hand Black",
-     "options": {
-      "colour": "White Base/Clock Hand Black"
-     }
-    },
-    {
-     "id": 5558996068,
-     "label": "Wooden Base/Clock Hand Black",
-     "options": {
-      "colour": "Wooden Base/Clock Hand Black"
-     }
-    }
-   ],
-   "description": "A 10-inch wall clock. No numbers, just the minutes and the promise.",
-   "details": [
-    "10″ wall clock",
-    "Printed face",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": [
-    {
-     "name": "colour",
-     "values": [
-      "White Base/Clock Hand Black",
-      "Wooden Base/Clock Hand Black"
-     ]
-    }
-   ]
+   "options": [],
+   "key": "T12"
   },
   {
    "slug": "wifi-password",
@@ -1201,7 +1099,8 @@
     "Die-cut magnet, 4″×4″",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
-   "options": []
+   "options": [],
+   "key": "T15"
   },
   {
    "slug": "the-good-side",
@@ -1258,217 +1157,8 @@
       "22″×22″"
      ]
     }
-   ]
-  },
-  {
-   "slug": "thermostat",
-   "name": "thermostat sweater",
-   "line": "who touched the thermostat.",
-   "challenge": "Hold the house at 22° for twenty seconds.",
-   "game": "games/thermostat.js",
-   "price": 11800,
-   "images": [
-    {
-     "src": "img/thermostat/1.jpg",
-     "alt": "thermostat sweater, Custom"
-    },
-    {
-     "src": "img/thermostat/2.jpg",
-     "alt": "thermostat sweater, Custom"
-    },
-    {
-     "src": "img/thermostat/3.jpg",
-     "alt": "thermostat sweater, Custom"
-    },
-    {
-     "src": "img/thermostat/4.jpg",
-     "alt": "thermostat sweater, Custom"
-    },
-    {
-     "src": "img/thermostat/5.jpg",
-     "alt": "thermostat sweater, Custom"
-    },
-    {
-     "src": "img/thermostat/6.jpg",
-     "alt": "thermostat sweater, Custom"
-    }
    ],
-   "variants": [
-    {
-     "id": 5559094289,
-     "label": "S",
-     "options": {
-      "size": "S"
-     }
-    },
-    {
-     "id": 5559094290,
-     "label": "M",
-     "options": {
-      "size": "M"
-     }
-    },
-    {
-     "id": 5559094292,
-     "label": "L",
-     "options": {
-      "size": "L"
-     }
-    },
-    {
-     "id": 5559094293,
-     "label": "XL",
-     "options": {
-      "size": "XL"
-     }
-    },
-    {
-     "id": 5559094294,
-     "label": "2XL",
-     "options": {
-      "size": "2XL"
-     }
-    }
-   ],
-   "description": "A knitted crew neck in pine and bone, with the question knitted into the front.",
-   "details": [
-    "Custom knitted jacquard, cotton blend",
-    "Knitted, not printed",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": [
-    {
-     "name": "size",
-     "values": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-     ]
-    }
-   ]
-  },
-  {
-   "slug": "just-a-splash",
-   "name": "just a splash glass",
-   "line": "just a splash.",
-   "challenge": "Pour a splash. Just a splash.",
-   "game": "games/just-a-splash.js",
-   "price": 2600,
-   "images": [
-    {
-     "src": "img/just-a-splash/1.jpg",
-     "alt": "just a splash glass"
-    },
-    {
-     "src": "img/just-a-splash/2.jpg",
-     "alt": "just a splash glass"
-    },
-    {
-     "src": "img/just-a-splash/3.jpg",
-     "alt": "just a splash glass"
-    },
-    {
-     "src": "img/just-a-splash/4.jpg",
-     "alt": "just a splash glass"
-    },
-    {
-     "src": "img/just-a-splash/5.jpg",
-     "alt": "just a splash glass"
-    },
-    {
-     "src": "img/just-a-splash/6.jpg",
-     "alt": "just a splash glass"
-    }
-   ],
-   "variants": [
-    {
-     "id": 5559094357,
-     "label": "",
-     "options": {}
-    }
-   ],
-   "description": "A heavy rocks glass with one thin line near the bottom. That's the splash.",
-   "details": [
-    "Rocks glass, 10.5 oz",
-    "Printed",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": []
-  },
-  {
-   "slug": "not-tennis",
-   "name": "it's not tennis paddles",
-   "line": "it's not tennis.",
-   "challenge": "Ten returns in a row.",
-   "game": "games/not-tennis.js",
-   "price": 8800,
-   "images": [
-    {
-     "src": "img/not-tennis/1.jpg",
-     "alt": "it's not tennis paddles, Wood"
-    }
-   ],
-   "variants": [
-    {
-     "id": 5558997037,
-     "label": "",
-     "options": {}
-    }
-   ],
-   "description": "Two wooden pickleball paddles and balls, for the people who keep calling it tennis.",
-   "details": [
-    "Set of 2 paddles + balls",
-    "Printed face",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": []
-  },
-  {
-   "slug": "the-last-piece",
-   "name": "the last piece puzzle",
-   "line": "the last piece.",
-   "challenge": "Solve the puzzle.",
-   "game": "games/the-last-piece.js",
-   "price": 4600,
-   "images": [
-    {
-     "src": "img/the-last-piece/1.jpg",
-     "alt": "the last piece puzzle, White (glossy)"
-    }
-   ],
-   "variants": [
-    {
-     "id": 5558997263,
-     "label": "21″×15.5″ (500 pcs)",
-     "options": {
-      "size": "21″×15.5″ (500 pcs)"
-     }
-    },
-    {
-     "id": 5558997265,
-     "label": "30″×20″ (1000 pcs)",
-     "options": {
-      "size": "30″×20″ (1000 pcs)"
-     }
-    }
-   ],
-   "description": "An all-ivory jigsaw with one green dot. It comes in a tin. Good luck.",
-   "details": [
-    "500 or 1000 pieces, in a tin",
-    "Printed",
-    "Made to order by Printful; ships in about a week. Shipping included."
-   ],
-   "options": [
-    {
-     "name": "size",
-     "values": [
-      "21″×15.5″ (500 pcs)",
-      "30″×20″ (1000 pcs)"
-     ]
-    }
-   ]
+   "key": "T16"
   }
  ]
 }
