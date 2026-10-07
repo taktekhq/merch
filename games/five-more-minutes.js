@@ -11,7 +11,7 @@ export default function mount(kit) {
   const ink = art.INK, accent = art.ACCENT, muted = art.MUTED;
   const DAWN = '#F2D98A';
   const total = STILL_SECONDS * 1000;
-  const head = art.heading(kit, 'five more minutes.', 'snooze it, then stay still');
+  const head = art.heading(kit, 'five more minutes.', 'snooze it, then stay still', { dark: true });
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);

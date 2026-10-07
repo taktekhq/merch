@@ -1,52 +1,60 @@
-// leave the light on. — a dark room, a jar candle, gusts from the sides.
-// Cup your hand on the windy side (hold pointer/touch there, or hold the matching
-// arrow key) to shield the flame. Keep it lit 30 real seconds.
+// T11 — leave the light on. candle
+// A dark room, a jar candle on a table, gusts from the sides. Cup your hand on the windy
+// side (hold pointer/touch there, or hold the matching arrow key) to shield the flame.
+// Keep it lit 30 real seconds.
+import * as art from './_art.js';
+
 export default function mount(kit) {
-  const NIGHT = '#1B2230', OAT = '#E8DFCF', BUTTER = '#F2D98A', CLAY = '#C9764F', GREEN = kit.colors.accent || '#00A862';
   const WIN_SECONDS = 30;
+  const head = art.heading(kit, 'leave the light on.', 'hold the windy side', { dark: true });
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
-  svg.append(kit.svg('rect', { x: 0, y: 0, width: 1000, height: 1000, fill: NIGHT }));
-  // a faint window/wall seam either side, purely scenery
-  svg.append(kit.svg('rect', { x: 40, y: 60, width: 2, height: 880, fill: '#2A3346' }));
-  svg.append(kit.svg('rect', { x: 958, y: 60, width: 2, height: 880, fill: '#2A3346' }));
+  kit.stage.append(svg);
 
-  // jar + table
-  svg.append(kit.svg('rect', { x: 260, y: 860, width: 480, height: 20, rx: 6, fill: '#121722' }));
+  const r = art.room(kit, { wall: art.NIGHT, floor: art.shade(art.NIGHT, -0.08), floorY: 780, window: { x: 60, y: 140, w: 190, h: 240, night: true, curtain: art.DUSTY } });
+  svg.append(r.el);
+
+  const tbl = art.table(kit, 500, 860, { w: 320, h: 22, legH: 150, color: '#2A3245' });
+  svg.append(tbl);
+
+  // a warm pool of light under the jar on the table
+  const pool = kit.svg('ellipse', { cx: 500, cy: 714, rx: 160, ry: 30, fill: art.BUTTER, opacity: 0.12 });
+  svg.append(pool);
+
   const jar = kit.svg('g');
   jar.append(
-    kit.svg('rect', { x: 400, y: 640, width: 200, height: 230, rx: 18, fill: 'rgba(232,223,207,0.08)', stroke: OAT, 'stroke-width': 6 }),
-    kit.svg('rect', { x: 384, y: 616, width: 232, height: 28, rx: 10, fill: OAT, opacity: 0.9 }),
+    kit.svg('rect', { x: 420, y: 560, width: 160, height: 160, rx: 16, fill: 'rgba(232,223,207,0.1)', stroke: art.OAT, 'stroke-width': 6 }),
+    kit.svg('rect', { x: 408, y: 540, width: 184, height: 24, rx: 9, fill: art.OAT, opacity: 0.9 }),
   );
   svg.append(jar);
 
-  const flameGroup = kit.svg('g', { transform: 'translate(500 610)' });
-  const flameOuter = kit.svg('path', { fill: CLAY, opacity: 0.9 });
-  const flameInner = kit.svg('path', { fill: BUTTER });
-  const wick = kit.svg('rect', { x: -4, y: 28, width: 8, height: 26, rx: 3, fill: '#1B140E' });
-  flameGroup.append(wick, flameOuter, flameInner);
+  const flameGroup = kit.svg('g', { transform: 'translate(500 538)' });
+  const flameOuter = kit.svg('path', { fill: art.CLAY, opacity: 0.9 });
+  const flameInner = kit.svg('path', { fill: art.BUTTER });
+  const wick = kit.svg('rect', { x: -4, y: 22, width: 8, height: 22, rx: 3, fill: '#1B140E' });
+  const glow = kit.svg('circle', { cx: 0, cy: -30, r: 70, fill: art.BUTTER, opacity: 0.1 });
+  flameGroup.append(glow, wick, flameOuter, flameInner);
   svg.append(flameGroup);
 
   const gustMark = kit.svg('g', { opacity: 0 });
-  const gustLines = [0, 1, 2].map((i) => kit.svg('path', { stroke: '#8FA6B8', 'stroke-width': 6, fill: 'none', 'stroke-linecap': 'round', opacity: 0.85 - i * 0.2 }));
+  const gustLines = [0, 1, 2].map((i) => kit.svg('path', { stroke: art.DUSTY, 'stroke-width': 6, fill: 'none', 'stroke-linecap': 'round', opacity: 0.85 - i * 0.2 }));
   gustMark.append(...gustLines);
   svg.append(gustMark);
 
-  const hint = kit.svg('text', { x: 500, y: 940, 'text-anchor': 'middle', 'font-family': 'var(--mono)', 'font-size': 22, fill: '#6B7694' });
-  hint.textContent = 'hold the windy side';
-  svg.append(hint);
+  // curtain reacting extra to the gust, on top of its own idle sway
+  const gustCurtain = r.window.curtainL;
 
   kit.stage.append(svg);
 
-  // left/right capture zones (also serve as a subtle highlight when held)
   const zoneStyle = { position: 'absolute', top: '0', bottom: '0', width: '50%' };
   const leftZone = kit.el('div', { style: { ...zoneStyle, left: '0' } });
   const rightZone = kit.el('div', { style: { ...zoneStyle, right: '0' } });
   kit.stage.append(leftZone, rightZone);
 
-  let leftHeld = false, rightHeld = false;
-  const setLeft = (v) => { leftHeld = v; leftZone.style.background = v ? 'rgba(0,168,98,0.08)' : ''; };
-  const setRight = (v) => { rightHeld = v; rightZone.style.background = v ? 'rgba(0,168,98,0.08)' : ''; };
+  let leftHeld = false, rightHeld = false, started = false;
+  const touch = () => { if (!started) { started = true; head.hide(); } };
+  const setLeft = (v) => { leftHeld = v; if (v) touch(); leftZone.style.background = v ? 'rgba(0,168,98,0.08)' : ''; };
+  const setRight = (v) => { rightHeld = v; if (v) touch(); rightZone.style.background = v ? 'rgba(0,168,98,0.08)' : ''; };
 
   kit.on(leftZone, 'pointerdown', (e) => { e.preventDefault(); setLeft(true); });
   kit.on(leftZone, 'pointerup', () => setLeft(false));
@@ -73,16 +81,21 @@ export default function mount(kit) {
     flameOuter.setAttribute('d', `M0 0 C ${w} ${-h * 0.35} ${w * 0.5 + lean} ${-h} 0 ${-h - 10} C ${-w * 0.5 + lean} ${-h} ${-w} ${-h * 0.35} 0 0 Z`);
     flameInner.setAttribute('d', `M0 -2 C ${w * 0.55} ${-h * 0.4} ${w * 0.25 + lean * 0.6} ${-h * 0.78} 0 ${-h * 0.86} C ${-w * 0.25 + lean * 0.6} ${-h * 0.78} ${-w * 0.55} ${-h * 0.4} 0 -2 Z`);
     flameGroup.style.opacity = 0.25 + flame * 0.75;
+    glow.setAttribute('opacity', 0.06 + flame * 0.1);
+    glow.setAttribute('r', 50 + flame * 30);
   };
   const drawGust = () => {
     gustMark.setAttribute('opacity', gustOn ? 1 : 0);
-    const x0 = gustSide === 'left' ? 60 : 940;
+    const x0 = gustSide === 'left' ? 70 : 930;
     const dir = gustSide === 'left' ? 1 : -1;
     gustLines.forEach((p, i) => {
-      const y = 520 + i * 36;
+      const y = 460 + i * 36;
       p.setAttribute('d', `M ${x0} ${y} q ${40 * dir} -16 ${80 * dir} 0 t ${80 * dir} 0`);
     });
-    gustMark.setAttribute('transform', `translate(${0} 0)`);
+    if (gustCurtain) {
+      const push = gustOn ? (gustSide === 'left' ? 10 : -4) : 0;
+      gustCurtain.style.transition = 'none';
+    }
   };
   drawFlame(); drawGust();
 
@@ -92,7 +105,6 @@ export default function mount(kit) {
   };
 
   kit.loop((dt) => {
-    // gust scheduling
     gustT += dt;
     if (!gustOn && gustT >= nextGustIn) {
       gustOn = true; gustT = 0; gustSide = Math.random() < 0.5 ? 'left' : 'right';
@@ -110,6 +122,13 @@ export default function mount(kit) {
     if (flame <= 0) { resetFlame(); return; }
     lit += dt;
     kit.status(`${Math.min(WIN_SECONDS, Math.floor(lit / 1000))}s / ${WIN_SECONDS}s`);
-    if (lit >= WIN_SECONDS * 1000) { kit.status(`${WIN_SECONDS}s / ${WIN_SECONDS}s`); kit.win('still lit. leave it.'); return false; }
+    if (lit >= WIN_SECONDS * 1000) {
+      kit.status(`${WIN_SECONDS}s / ${WIN_SECONDS}s`);
+      art.winBeat(kit, 'leave the light on.');
+      kit.after(1100, () => kit.win('still lit. leave it.'));
+      return false;
+    }
   });
+
+  window.__ltlo = { skip: () => { lit = (WIN_SECONDS - 0.4) * 1000; gustOn = false; nextGustIn = 1e9; } };
 }

@@ -6,7 +6,7 @@ import * as art from './_art.js';
 export default function mount(kit) {
   const ink = art.INK, accent = art.ACCENT, muted = art.MUTED;
   const REACT_MS = 300;
-  const head = art.heading(kit, 'first one up.', 'wait for the ring, then be first');
+  const head = art.heading(kit, 'first one up.', 'wait for the ring, then be first', { dark: true });
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);
