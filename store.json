@@ -49,14 +49,14 @@
    ],
    "variants": [
     {
-     "id": 5558993083,
+     "id": 5559475062,
      "label": "Moss",
      "options": {
       "colour": "Moss"
      }
     },
     {
-     "id": 5558993084,
+     "id": 5559475063,
      "label": "Black",
      "options": {
       "colour": "Black"
@@ -115,7 +115,7 @@
    ],
    "variants": [
     {
-     "id": 5558993276,
+     "id": 5559475241,
      "label": "Chocolate Brown / S",
      "options": {
       "colour": "Chocolate Brown",
@@ -123,7 +123,7 @@
      }
     },
     {
-     "id": 5558993277,
+     "id": 5559475242,
      "label": "Chocolate Brown / M",
      "options": {
       "colour": "Chocolate Brown",
@@ -131,7 +131,7 @@
      }
     },
     {
-     "id": 5558993279,
+     "id": 5559475243,
      "label": "Chocolate Brown / L",
      "options": {
       "colour": "Chocolate Brown",
@@ -139,7 +139,7 @@
      }
     },
     {
-     "id": 5558993281,
+     "id": 5559475244,
      "label": "Chocolate Brown / XL",
      "options": {
       "colour": "Chocolate Brown",
@@ -147,7 +147,7 @@
      }
     },
     {
-     "id": 5558993283,
+     "id": 5559475245,
      "label": "Chocolate Brown / 2XL",
      "options": {
       "colour": "Chocolate Brown",
@@ -155,7 +155,7 @@
      }
     },
     {
-     "id": 5558993285,
+     "id": 5559475246,
      "label": "Moss Gray / S",
      "options": {
       "colour": "Moss Gray",
@@ -163,7 +163,7 @@
      }
     },
     {
-     "id": 5558993286,
+     "id": 5559475247,
      "label": "Moss Gray / M",
      "options": {
       "colour": "Moss Gray",
@@ -171,7 +171,7 @@
      }
     },
     {
-     "id": 5558993287,
+     "id": 5559475248,
      "label": "Moss Gray / L",
      "options": {
       "colour": "Moss Gray",
@@ -179,7 +179,7 @@
      }
     },
     {
-     "id": 5558993289,
+     "id": 5559475249,
      "label": "Moss Gray / XL",
      "options": {
       "colour": "Moss Gray",
@@ -187,7 +187,7 @@
      }
     },
     {
-     "id": 5558993290,
+     "id": 5559475250,
      "label": "Moss Gray / 2XL",
      "options": {
       "colour": "Moss Gray",
@@ -195,7 +195,7 @@
      }
     },
     {
-     "id": 5558993292,
+     "id": 5559475251,
      "label": "Black / S",
      "options": {
       "colour": "Black",
@@ -203,7 +203,7 @@
      }
     },
     {
-     "id": 5558993293,
+     "id": 5559475252,
      "label": "Black / M",
      "options": {
       "colour": "Black",
@@ -211,7 +211,7 @@
      }
     },
     {
-     "id": 5558993295,
+     "id": 5559475253,
      "label": "Black / L",
      "options": {
       "colour": "Black",
@@ -219,7 +219,7 @@
      }
     },
     {
-     "id": 5558993296,
+     "id": 5559475254,
      "label": "Black / XL",
      "options": {
       "colour": "Black",
@@ -227,7 +227,7 @@
      }
     },
     {
-     "id": 5558993298,
+     "id": 5559475255,
      "label": "Black / 2XL",
      "options": {
       "colour": "Black",
@@ -338,31 +338,31 @@
    "price": 5200,
    "images": [
     {
-     "src": "img/fix-it-this-weekend/1.jpg",
-     "alt": "fix it this weekend apron, Dark Green"
+     "src": "img/it-needs-salt/1.jpg",
+     "alt": "it needs salt apron, Dark Green"
     },
     {
-     "src": "img/fix-it-this-weekend/2.jpg",
-     "alt": "fix it this weekend apron, Duck Brown"
+     "src": "img/it-needs-salt/2.jpg",
+     "alt": "it needs salt apron, Duck Brown"
     }
    ],
    "variants": [
     {
-     "id": 5558993468,
-     "label": "Duck Brown",
-     "options": {
-      "colour": "Duck Brown"
-     }
-    },
-    {
-     "id": 5558993474,
+     "id": 5559475524,
      "label": "Dark Green",
      "options": {
       "colour": "Dark Green"
      }
+    },
+    {
+     "id": 5559475525,
+     "label": "Duck Brown",
+     "options": {
+      "colour": "Duck Brown"
+     }
     }
    ],
-   "description": "A heavy twill bib apron with pockets, for the weekend that keeps not happening.",
+   "description": "A heavy twill bib apron in dark green or duck brown, for the cook who tastes it and says it every time.",
    "details": [
     "Port Authority A900 Signature heavy twill",
     "Printed chest",
@@ -372,8 +372,8 @@
     {
      "name": "colour",
      "values": [
-      "Duck Brown",
-      "Dark Green"
+      "Dark Green",
+      "Duck Brown"
      ]
     }
    ],
@@ -414,7 +414,7 @@
    ],
    "variants": [
     {
-     "id": 5559094057,
+     "id": 5559475599,
      "label": "",
      "options": {}
     }
@@ -434,40 +434,36 @@
    "line": "we have food at home.",
    "challenge": "Let everything roll past. Take only the tote.",
    "game": "games/food-at-home.js",
-   "price": 8200,
+   "price": 4800,
    "images": [
     {
      "src": "img/food-at-home/1.jpg",
-     "alt": "food at home tote, Bay"
+     "alt": "food at home tote, Light Grey"
     },
     {
      "src": "img/food-at-home/2.jpg",
-     "alt": "food at home tote, Ivory"
-    },
-    {
-     "src": "img/food-at-home/3.jpg",
-     "alt": "food at home tote, Bay"
+     "alt": "food at home tote, Natural"
     }
    ],
    "variants": [
     {
-     "id": 5558993841,
-     "label": "Bay",
+     "id": 5559475633,
+     "label": "Light Grey",
      "options": {
-      "colour": "Bay"
+      "colour": "Light Grey"
      }
     },
     {
-     "id": 5558993842,
-     "label": "Ivory",
+     "id": 5559475634,
+     "label": "Natural",
      "options": {
-      "colour": "Ivory"
+      "colour": "Natural"
      }
     }
    ],
-   "description": "A big garment-dyed canvas carry-all, for the shop you were told not to do.",
+   "description": "A sturdy cotton tote with the line printed big, for the shop you were told not to do.",
    "details": [
-    "Comfort Colors carry-all tote",
+    "Westford Mill cotton tote",
     "Printed front",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
@@ -475,8 +471,8 @@
     {
      "name": "colour",
      "values": [
-      "Bay",
-      "Ivory"
+      "Light Grey",
+      "Natural"
      ]
     }
    ],
@@ -491,73 +487,33 @@
    "price": 4400,
    "images": [
     {
-     "src": "img/on-my-way/1.jpg",
-     "alt": "on my way tee, Chalky Mint"
+     "src": "img/five-minutes-away/1.jpg",
+     "alt": "5 minutes away tee, Chalky Mint"
     },
     {
-     "src": "img/on-my-way/2.jpg",
-     "alt": "on my way tee, Butter"
+     "src": "img/five-minutes-away/2.jpg",
+     "alt": "5 minutes away tee, Butter"
     },
     {
-     "src": "img/on-my-way/3.jpg",
-     "alt": "on my way tee, Ivory"
+     "src": "img/five-minutes-away/3.jpg",
+     "alt": "5 minutes away tee, Ivory"
     },
     {
-     "src": "img/on-my-way/4.jpg",
-     "alt": "on my way tee, Chalky Mint"
+     "src": "img/five-minutes-away/4.jpg",
+     "alt": "5 minutes away tee, Chalky Mint"
     },
     {
-     "src": "img/on-my-way/5.jpg",
-     "alt": "on my way tee, Chalky Mint"
+     "src": "img/five-minutes-away/5.jpg",
+     "alt": "5 minutes away tee, Chalky Mint"
     },
     {
-     "src": "img/on-my-way/6.jpg",
-     "alt": "on my way tee, Chalky Mint"
+     "src": "img/five-minutes-away/6.jpg",
+     "alt": "5 minutes away tee, Chalky Mint"
     }
    ],
    "variants": [
     {
-     "id": 5558983292,
-     "label": "Ivory / S",
-     "options": {
-      "colour": "Ivory",
-      "size": "S"
-     }
-    },
-    {
-     "id": 5558983298,
-     "label": "Ivory / M",
-     "options": {
-      "colour": "Ivory",
-      "size": "M"
-     }
-    },
-    {
-     "id": 5558983299,
-     "label": "Ivory / L",
-     "options": {
-      "colour": "Ivory",
-      "size": "L"
-     }
-    },
-    {
-     "id": 5558983301,
-     "label": "Ivory / XL",
-     "options": {
-      "colour": "Ivory",
-      "size": "XL"
-     }
-    },
-    {
-     "id": 5558983303,
-     "label": "Ivory / 2XL",
-     "options": {
-      "colour": "Ivory",
-      "size": "2XL"
-     }
-    },
-    {
-     "id": 5558983305,
+     "id": 5559475774,
      "label": "Butter / S",
      "options": {
       "colour": "Butter",
@@ -565,7 +521,7 @@
      }
     },
     {
-     "id": 5558983307,
+     "id": 5559475775,
      "label": "Butter / M",
      "options": {
       "colour": "Butter",
@@ -573,7 +529,7 @@
      }
     },
     {
-     "id": 5558983310,
+     "id": 5559475776,
      "label": "Butter / L",
      "options": {
       "colour": "Butter",
@@ -581,7 +537,7 @@
      }
     },
     {
-     "id": 5558983311,
+     "id": 5559475777,
      "label": "Butter / XL",
      "options": {
       "colour": "Butter",
@@ -589,7 +545,7 @@
      }
     },
     {
-     "id": 5558983313,
+     "id": 5559475778,
      "label": "Butter / 2XL",
      "options": {
       "colour": "Butter",
@@ -597,7 +553,47 @@
      }
     },
     {
-     "id": 5558983315,
+     "id": 5559475779,
+     "label": "Ivory / S",
+     "options": {
+      "colour": "Ivory",
+      "size": "S"
+     }
+    },
+    {
+     "id": 5559475780,
+     "label": "Ivory / M",
+     "options": {
+      "colour": "Ivory",
+      "size": "M"
+     }
+    },
+    {
+     "id": 5559475781,
+     "label": "Ivory / L",
+     "options": {
+      "colour": "Ivory",
+      "size": "L"
+     }
+    },
+    {
+     "id": 5559475782,
+     "label": "Ivory / XL",
+     "options": {
+      "colour": "Ivory",
+      "size": "XL"
+     }
+    },
+    {
+     "id": 5559475783,
+     "label": "Ivory / 2XL",
+     "options": {
+      "colour": "Ivory",
+      "size": "2XL"
+     }
+    },
+    {
+     "id": 5559475784,
      "label": "Chalky Mint / S",
      "options": {
       "colour": "Chalky Mint",
@@ -605,7 +601,7 @@
      }
     },
     {
-     "id": 5558983316,
+     "id": 5559475785,
      "label": "Chalky Mint / M",
      "options": {
       "colour": "Chalky Mint",
@@ -613,7 +609,7 @@
      }
     },
     {
-     "id": 5558983317,
+     "id": 5559475786,
      "label": "Chalky Mint / L",
      "options": {
       "colour": "Chalky Mint",
@@ -621,7 +617,7 @@
      }
     },
     {
-     "id": 5558983319,
+     "id": 5559475787,
      "label": "Chalky Mint / XL",
      "options": {
       "colour": "Chalky Mint",
@@ -629,7 +625,7 @@
      }
     },
     {
-     "id": 5558983320,
+     "id": 5559475788,
      "label": "Chalky Mint / 2XL",
      "options": {
       "colour": "Chalky Mint",
@@ -637,18 +633,18 @@
      }
     }
    ],
-   "description": "Garment-dyed heavyweight cotton. The line is high on the back, so the people behind you read it as you leave.",
+   "description": "Garment-dyed heavyweight cotton with the line printed big across the back. You are not 5 minutes away.",
    "details": [
     "Comfort Colors 1717, 6.1 oz garment-dyed cotton",
-    "Printed back, embroidered green dot on the chest",
+    "Printed back",
     "Made to order by Printful; ships in about a week. Shipping included."
    ],
    "options": [
     {
      "name": "colour",
      "values": [
-      "Ivory",
       "Butter",
+      "Ivory",
       "Chalky Mint"
      ]
     },
@@ -688,33 +684,25 @@
     {
      "src": "img/lock-the-door/4.jpg",
      "alt": "did you lock the door beanie, Petrol Blue"
-    },
-    {
-     "src": "img/lock-the-door/5.jpg",
-     "alt": "did you lock the door beanie, Petrol Blue"
-    },
-    {
-     "src": "img/lock-the-door/6.jpg",
-     "alt": "did you lock the door beanie, Petrol Blue"
     }
    ],
    "variants": [
     {
-     "id": 5558993953,
+     "id": 5559475980,
      "label": "Cypress",
      "options": {
       "colour": "Cypress"
      }
     },
     {
-     "id": 5558993955,
+     "id": 5559475981,
      "label": "Petrol Blue",
      "options": {
       "colour": "Petrol Blue"
      }
     },
     {
-     "id": 5558993956,
+     "id": 5559475982,
      "label": "Walnut",
      "options": {
       "colour": "Walnut"
@@ -774,7 +762,7 @@
    ],
    "variants": [
     {
-     "id": 5558994215,
+     "id": 5559476052,
      "label": "Blue Spruce / S",
      "options": {
       "colour": "Blue Spruce",
@@ -782,7 +770,7 @@
      }
     },
     {
-     "id": 5558994219,
+     "id": 5559476054,
      "label": "Blue Spruce / M",
      "options": {
       "colour": "Blue Spruce",
@@ -790,7 +778,7 @@
      }
     },
     {
-     "id": 5558994222,
+     "id": 5559476056,
      "label": "Blue Spruce / L",
      "options": {
       "colour": "Blue Spruce",
@@ -798,7 +786,7 @@
      }
     },
     {
-     "id": 5558994225,
+     "id": 5559476057,
      "label": "Blue Spruce / XL",
      "options": {
       "colour": "Blue Spruce",
@@ -806,7 +794,7 @@
      }
     },
     {
-     "id": 5558994228,
+     "id": 5559476060,
      "label": "Blue Spruce / 2XL",
      "options": {
       "colour": "Blue Spruce",
@@ -814,7 +802,7 @@
      }
     },
     {
-     "id": 5558994229,
+     "id": 5559476061,
      "label": "Pepper / S",
      "options": {
       "colour": "Pepper",
@@ -822,7 +810,7 @@
      }
     },
     {
-     "id": 5558994231,
+     "id": 5559476062,
      "label": "Pepper / M",
      "options": {
       "colour": "Pepper",
@@ -830,7 +818,7 @@
      }
     },
     {
-     "id": 5558994232,
+     "id": 5559476063,
      "label": "Pepper / L",
      "options": {
       "colour": "Pepper",
@@ -838,7 +826,7 @@
      }
     },
     {
-     "id": 5558994234,
+     "id": 5559476067,
      "label": "Pepper / XL",
      "options": {
       "colour": "Pepper",
@@ -846,7 +834,7 @@
      }
     },
     {
-     "id": 5558994236,
+     "id": 5559476068,
      "label": "Pepper / 2XL",
      "options": {
       "colour": "Pepper",
@@ -854,7 +842,7 @@
      }
     },
     {
-     "id": 5558994237,
+     "id": 5559476070,
      "label": "Blue Jean / S",
      "options": {
       "colour": "Blue Jean",
@@ -862,7 +850,7 @@
      }
     },
     {
-     "id": 5558994238,
+     "id": 5559476071,
      "label": "Blue Jean / M",
      "options": {
       "colour": "Blue Jean",
@@ -870,7 +858,7 @@
      }
     },
     {
-     "id": 5558994239,
+     "id": 5559476073,
      "label": "Blue Jean / L",
      "options": {
       "colour": "Blue Jean",
@@ -878,7 +866,7 @@
      }
     },
     {
-     "id": 5558994240,
+     "id": 5559476074,
      "label": "Blue Jean / XL",
      "options": {
       "colour": "Blue Jean",
@@ -886,7 +874,7 @@
      }
     },
     {
-     "id": 5558994241,
+     "id": 5559476075,
      "label": "Blue Jean / 2XL",
      "options": {
       "colour": "Blue Jean",
@@ -997,34 +985,34 @@
    "price": 3400,
    "images": [
     {
-     "src": "img/leave-the-light-on/1.jpg",
-     "alt": "leave the light on candle, White"
+     "src": "img/midnight-oil/1.jpg",
+     "alt": "midnight oil candle, White"
     },
     {
-     "src": "img/leave-the-light-on/2.jpg",
-     "alt": "leave the light on candle, White"
+     "src": "img/midnight-oil/2.jpg",
+     "alt": "midnight oil candle, White"
     },
     {
-     "src": "img/leave-the-light-on/3.jpg",
-     "alt": "leave the light on candle, White"
+     "src": "img/midnight-oil/3.jpg",
+     "alt": "midnight oil candle, White"
     },
     {
-     "src": "img/leave-the-light-on/4.jpg",
-     "alt": "leave the light on candle, White"
+     "src": "img/midnight-oil/4.jpg",
+     "alt": "midnight oil candle, White"
     },
     {
-     "src": "img/leave-the-light-on/5.jpg",
-     "alt": "leave the light on candle, White"
+     "src": "img/midnight-oil/5.jpg",
+     "alt": "midnight oil candle, White"
     }
    ],
    "variants": [
     {
-     "id": 5558994401,
+     "id": 5559476172,
      "label": "",
      "options": {}
     }
    ],
-   "description": "Soy wax in a glass jar, unscented, for the window of whoever's coming home late.",
+   "description": "Soy wax in a glass jar, unscented, for the desk at 1am.",
    "details": [
     "Soy wax, glass jar",
     "Printed label",
@@ -1089,7 +1077,7 @@
    ],
    "variants": [
     {
-     "id": 5558996365,
+     "id": 5559477760,
      "label": "",
      "options": {}
     }
@@ -1129,14 +1117,14 @@
    ],
    "variants": [
     {
-     "id": 5558996529,
+     "id": 5559477843,
      "label": "18″×18″",
      "options": {
       "size": "18″×18″"
      }
     },
     {
-     "id": 5558996530,
+     "id": 5559477844,
      "label": "22″×22″",
      "options": {
       "size": "22″×22″"
