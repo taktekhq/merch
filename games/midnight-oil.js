@@ -1,12 +1,13 @@
-// T11 — leave the light on. candle
-// A dark room, a jar candle on a table, gusts from the sides. Cup your hand on the windy
-// side (hold pointer/touch there, or hold the matching arrow key) to shield the flame.
-// Keep it lit 30 real seconds.
+// T11 — burning the midnight oil. candle
+// A late-night desk: a laptop gone dim, a closed book, a lamp left off, the wall clock well
+// past midnight — the only real light is the candle. Gusts come from the sides; cup your
+// hand on the windy side (hold pointer/touch there, or the matching arrow key) to shield the
+// flame. Keep it lit 30 real seconds.
 import * as art from './_art.js';
 
 export default function mount(kit) {
   const WIN_SECONDS = 30;
-  const head = art.heading(kit, 'leave the light on.', 'hold the windy side', { dark: true });
+  const head = art.heading(kit, 'burning the midnight oil.', 'hold the windy side', { dark: true });
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);
@@ -14,8 +15,44 @@ export default function mount(kit) {
   const r = art.room(kit, { wall: art.NIGHT, floor: art.shade(art.NIGHT, -0.08), floorY: 780, window: { x: 60, y: 140, w: 190, h: 240, night: true, curtain: art.DUSTY } });
   svg.append(r.el);
 
-  const tbl = art.table(kit, 500, 860, { w: 320, h: 22, legH: 150, color: '#2A3245' });
+  const tbl = art.table(kit, 500, 860, { w: 420, h: 22, legH: 150, color: '#2A3245' });
   svg.append(tbl);
+
+  // a wall clock, well past midnight
+  const clockG = kit.svg('g', { transform: 'translate(820 230)' });
+  clockG.append(kit.svg('circle', { cx: 0, cy: 0, r: 46, fill: art.shade(art.NIGHT, 0.14), stroke: art.OAT, 'stroke-width': 5 }));
+  [0, 90, 180, 270].forEach((deg) => clockG.append(kit.svg('line', { x1: 0, y1: -38, x2: 0, y2: -32, stroke: art.OAT, 'stroke-width': 3, transform: `rotate(${deg})`, opacity: 0.8 })));
+  const hourHand = kit.svg('line', { x1: 0, y1: 6, x2: 0, y2: -20, stroke: art.OAT, 'stroke-width': 4, 'stroke-linecap': 'round', transform: 'rotate(21)' });
+  const minHand = kit.svg('line', { x1: 0, y1: 8, x2: 0, y2: -32, stroke: art.OAT, 'stroke-width': 3, 'stroke-linecap': 'round', transform: 'rotate(252)' });
+  clockG.append(hourHand, minHand, kit.svg('circle', { cx: 0, cy: 0, r: 4, fill: art.OAT }));
+  svg.append(clockG);
+
+  // a laptop, left open, screen gone dim — nobody's watching it any more
+  const laptopG = kit.svg('g', { transform: 'translate(340 688)' });
+  art.shadow(laptopG, 0, 6, 150);
+  laptopG.append(kit.svg('path', { d: 'M -80 0 L 80 0 L 96 20 L -96 20 Z', fill: art.shade('#2A3245', -0.1) }));
+  laptopG.append(kit.svg('path', { d: 'M -78 -4 L 78 -4 L 70 -112 L -70 -112 Z', fill: '#C8CDD4' }));
+  laptopG.append(kit.svg('rect', { x: -64, y: -100, width: 128, height: 84, rx: 3, fill: '#2A3245', opacity: 0.92 }));
+  laptopG.append(kit.svg('rect', { x: -56, y: -92, width: 50, height: 5, fill: art.DUSTY, opacity: 0.35 }));
+  laptopG.append(kit.svg('rect', { x: -56, y: -82, width: 90, height: 5, fill: art.DUSTY, opacity: 0.22 }));
+  laptopG.append(kit.svg('rect', { x: -56, y: -72, width: 70, height: 5, fill: art.DUSTY, opacity: 0.22 }));
+  svg.append(laptopG);
+
+  // a book, closed, stacked
+  const bookG = kit.svg('g', { transform: 'translate(560 686)' });
+  art.shadow(bookG, 0, 4, 140);
+  bookG.append(kit.svg('rect', { x: -70, y: -14, width: 140, height: 18, rx: 3, fill: art.CLAY }));
+  bookG.append(kit.svg('rect', { x: -64, y: -28, width: 128, height: 16, rx: 3, fill: art.SPRUCE }));
+  bookG.append(kit.svg('rect', { x: -64, y: -28, width: 128, height: 5, fill: art.shade(art.SPRUCE, 0.18), opacity: 0.6 }));
+  svg.append(bookG);
+
+  // a desk lamp, switched off
+  const lampG = kit.svg('g', { transform: 'translate(760 688)' });
+  art.shadow(lampG, 0, 4, 90);
+  lampG.append(kit.svg('rect', { x: -22, y: -4, width: 44, height: 8, rx: 4, fill: art.shade(art.NIGHT, 0.1) }));
+  lampG.append(kit.svg('rect', { x: -4, y: -64, width: 8, height: 60, fill: art.shade(art.NIGHT, 0.1) }));
+  lampG.append(kit.svg('path', { d: 'M -26 -64 L 26 -64 L 36 -94 L -36 -94 Z', fill: art.DUSTY, opacity: 0.6 }));
+  svg.append(lampG);
 
   // a warm pool of light under the jar on the table
   const pool = kit.svg('ellipse', { cx: 500, cy: 714, rx: 160, ry: 30, fill: art.BUTTER, opacity: 0.12 });
@@ -124,11 +161,11 @@ export default function mount(kit) {
     kit.status(`${Math.min(WIN_SECONDS, Math.floor(lit / 1000))}s / ${WIN_SECONDS}s`);
     if (lit >= WIN_SECONDS * 1000) {
       kit.status(`${WIN_SECONDS}s / ${WIN_SECONDS}s`);
-      art.winBeat(kit, 'leave the light on.');
-      kit.after(1100, () => kit.win('still lit. leave it.'));
+      art.winBeat(kit, 'burning the midnight oil.');
+      kit.after(1100, () => kit.win('still burning. go to bed.'));
       return false;
     }
   });
 
-  window.__ltlo = { skip: () => { lit = (WIN_SECONDS - 0.4) * 1000; gustOn = false; nextGustIn = 1e9; } };
+  window.__mo = { skip: () => { lit = (WIN_SECONDS - 0.4) * 1000; gustOn = false; nextGustIn = 1e9; } };
 }

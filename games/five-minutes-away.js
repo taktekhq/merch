@@ -1,4 +1,4 @@
-// T07 — on my way tee
+// T07 — 5 minutes away tee
 // Ten seconds to find keys, phone, wallet and sunglasses in a messy hallway. Make the door.
 import * as art from './_art.js';
 
@@ -6,7 +6,19 @@ export default function mount(kit) {
   const ink = art.INK, muted = art.MUTED;
   const TOTAL_MS = 10000;
   const WALL = '#EFEAE0', FLOORY = 800;
-  const head = art.heading(kit, 'on my way.', 'ten seconds — find everything, then the door');
+
+  // Custom heading: the tee's line has no full stop — the green dot sits under it as a
+  // printed mark instead of acting as punctuation (unlike art.heading's inline dot).
+  function headingDotUnder(line, hint) {
+    const wrap = kit.el('div', { style: { position: 'absolute', left: '0', right: '0', top: '5%', textAlign: 'center', pointerEvents: 'none' } });
+    const h = kit.el('div', { class: 'g-mono', text: line, style: { fontFamily: 'var(--display)', fontWeight: '600', fontSize: 'clamp(16px, 3.4vw, 22px)', color: ink, letterSpacing: '-0.01em' } });
+    const dot = kit.el('div', { style: { width: '9px', height: '9px', borderRadius: '50%', background: art.ACCENT, margin: '7px auto 0' } });
+    const hintEl = kit.el('div', { class: 'g-mono', text: hint || '', style: { fontSize: '12px', color: muted, marginTop: '6px', transition: 'opacity .4s ease' } });
+    wrap.append(h, dot, hintEl);
+    kit.stage.append(wrap);
+    return { el: wrap, hide: () => { hintEl.style.opacity = '0'; } };
+  }
+  const head = headingDotUnder('5 minutes away', 'ten seconds — find everything, then the door');
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);
@@ -142,8 +154,8 @@ export default function mount(kit) {
     if (found.size === NEEDED.length) {
       daylight.setAttribute('opacity', 0.85);
       kit.after(300, () => {
-        art.winBeat(kit, 'on my way.');
-        kit.after(1100, () => kit.win('on my way.'));
+        art.winBeat(kit, '5 minutes away');
+        kit.after(1100, () => kit.win("5 minutes away. (you're still home.)"));
       });
     }
   });
@@ -159,5 +171,5 @@ export default function mount(kit) {
     }
   });
 
-  window.__omw = { collectAll: () => NEEDED.forEach((n) => collect(n.id)), openDoor: () => d.el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true })) };
+  window.__fma = { collectAll: () => NEEDED.forEach((n) => collect(n.id)), openDoor: () => d.el.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true })) };
 }
