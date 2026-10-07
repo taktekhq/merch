@@ -18,9 +18,9 @@ export default function mount(kit) {
   svg.append(kit.svg('rect', { x: 230, y: 800, width: 540, height: 110, rx: 16, fill: art.shade(art.NIGHT, 0.16), opacity: 0.5 }));
   svg.append(kit.svg('rect', { x: 250, y: 818, width: 500, height: 74, rx: 10, fill: 'none', stroke: art.shade(art.NIGHT, 0.3), 'stroke-width': 3, opacity: 0.4 }));
 
-  // a light switch on the wall
-  svg.append(kit.svg('rect', { x: 900, y: 360, width: 34, height: 48, rx: 6, fill: '#2a3347' }));
-  svg.append(kit.svg('rect', { x: 908, y: 368, width: 18, height: 10, rx: 3, fill: art.shade('#2a3347', 0.25) }));
+  // a light switch on the wall, clear of the last door
+  svg.append(kit.svg('rect', { x: 950, y: 420, width: 34, height: 48, rx: 6, fill: '#E8E2D6', opacity: 0.85 }));
+  svg.append(kit.svg('rect', { x: 959, y: 428, width: 16, height: 10, rx: 3, fill: art.shade(art.NIGHT, 0.1) }));
 
   // four bedroom doors with frames and brass handles
   const doorXs = [100, 320, 540, 760];
@@ -30,14 +30,15 @@ export default function mount(kit) {
   const spill = doorXs.map((x) => kit.svg('rect', { x: x + 6, y: 762, width: 158, height: 14, fill: art.BUTTER, opacity: 0 }));
   spill.forEach((s) => svg.append(s));
 
-  // the alarm clock on a small bedside table in the hallway
-  const tableX = 500, tableY = 780;
-  const tbl = art.table(kit, tableX, tableY, { w: 150, h: 16, legH: 80, color: '#5A6372' });
+  // the alarm clock on a small table in front of the doors, on the rug
+  const tableX = 500, tableY = 880;
+  const tbl = art.table(kit, tableX, tableY, { w: 160, h: 16, legH: 70, color: '#5A6372' });
   svg.append(tbl);
-  const clock = kit.svg('g', { transform: `translate(${tableX} ${tableY - 96})` });
-  clock.append(kit.svg('circle', { cx: -34, cy: -32, r: 13, fill: muted }));
-  clock.append(kit.svg('circle', { cx: 34, cy: -32, r: 13, fill: muted }));
-  const clockBody = kit.svg('circle', { cx: 0, cy: 0, r: 46, fill: '#fff' });
+  const clock = kit.svg('g', { transform: `translate(${tableX} ${tableY - 134})` });
+  art.shadow(clock, 0, 44, 90);
+  clock.append(kit.svg('circle', { cx: -30, cy: -28, r: 11, fill: muted }));
+  clock.append(kit.svg('circle', { cx: 30, cy: -28, r: 11, fill: muted }));
+  const clockBody = kit.svg('circle', { cx: 0, cy: 0, r: 38, fill: '#fff' });
   const clockFace = kit.svg('text', { x: 0, y: 8, 'text-anchor': 'middle', 'font-size': 30, fill: ink });
   clock.append(clockBody, clockFace);
   svg.append(clock);
