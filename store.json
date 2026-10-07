@@ -36,15 +36,15 @@
     },
     {
      "src": "img/told-you-so/1.jpg",
-     "alt": "told you so. cap, Black"
-    },
-    {
-     "src": "img/told-you-so/2.jpg",
      "alt": "told you so. cap, Moss"
     },
     {
-     "src": "img/told-you-so/3.jpg",
+     "src": "img/told-you-so/2.jpg",
      "alt": "told you so. cap, Black"
+    },
+    {
+     "src": "img/told-you-so/3.jpg",
+     "alt": "told you so. cap, Moss"
     }
    ],
    "variants": [
@@ -90,27 +90,27 @@
    "images": [
     {
      "src": "img/spare-key/1.jpg",
-     "alt": "the spare key hoodie, Black"
-    },
-    {
-     "src": "img/spare-key/2.jpg",
      "alt": "the spare key hoodie, Chocolate Brown"
     },
     {
-     "src": "img/spare-key/3.jpg",
+     "src": "img/spare-key/2.jpg",
      "alt": "the spare key hoodie, Moss Gray"
     },
     {
-     "src": "img/spare-key/4.jpg",
+     "src": "img/spare-key/3.jpg",
      "alt": "the spare key hoodie, Black"
+    },
+    {
+     "src": "img/spare-key/4.jpg",
+     "alt": "the spare key hoodie, Chocolate Brown"
     },
     {
      "src": "img/spare-key/5.jpg",
-     "alt": "the spare key hoodie, Black"
+     "alt": "the spare key hoodie, Chocolate Brown"
     },
     {
      "src": "img/spare-key/6.jpg",
-     "alt": "the spare key hoodie, Black"
+     "alt": "the spare key hoodie, Chocolate Brown"
     }
    ],
    "variants": [
@@ -298,14 +298,14 @@
    ],
    "variants": [
     {
-     "id": 5558993362,
+     "id": 5559523278,
      "label": "Fireside Brown",
      "options": {
       "colour": "Fireside Brown"
      }
     },
     {
-     "id": 5558993363,
+     "id": 5559523279,
      "label": "Heather Grey",
      "options": {
       "colour": "Heather Grey"
@@ -488,27 +488,27 @@
    "images": [
     {
      "src": "img/five-minutes-away/1.jpg",
-     "alt": "5 minutes away tee, Chalky Mint"
-    },
-    {
-     "src": "img/five-minutes-away/2.jpg",
      "alt": "5 minutes away tee, Butter"
     },
     {
-     "src": "img/five-minutes-away/3.jpg",
+     "src": "img/five-minutes-away/2.jpg",
      "alt": "5 minutes away tee, Ivory"
     },
     {
-     "src": "img/five-minutes-away/4.jpg",
+     "src": "img/five-minutes-away/3.jpg",
      "alt": "5 minutes away tee, Chalky Mint"
+    },
+    {
+     "src": "img/five-minutes-away/4.jpg",
+     "alt": "5 minutes away tee, Butter"
     },
     {
      "src": "img/five-minutes-away/5.jpg",
-     "alt": "5 minutes away tee, Chalky Mint"
+     "alt": "5 minutes away tee, Butter"
     },
     {
      "src": "img/five-minutes-away/6.jpg",
-     "alt": "5 minutes away tee, Chalky Mint"
+     "alt": "5 minutes away tee, Butter"
     }
    ],
    "variants": [
@@ -671,19 +671,19 @@
    "images": [
     {
      "src": "img/lock-the-door/1.jpg",
-     "alt": "did you lock the door beanie, Petrol Blue"
-    },
-    {
-     "src": "img/lock-the-door/2.jpg",
-     "alt": "did you lock the door beanie, Walnut"
-    },
-    {
-     "src": "img/lock-the-door/3.jpg",
      "alt": "did you lock the door beanie, Cypress"
     },
     {
-     "src": "img/lock-the-door/4.jpg",
+     "src": "img/lock-the-door/2.jpg",
      "alt": "did you lock the door beanie, Petrol Blue"
+    },
+    {
+     "src": "img/lock-the-door/3.jpg",
+     "alt": "did you lock the door beanie, Walnut"
+    },
+    {
+     "src": "img/lock-the-door/4.jpg",
+     "alt": "did you lock the door beanie, Cypress"
     }
    ],
    "variants": [
@@ -737,11 +737,11 @@
    "images": [
     {
      "src": "img/ask-your-mother/1.jpg",
-     "alt": "ask your mother crewneck, Pepper"
+     "alt": "ask your mother crewneck, Blue Spruce"
     },
     {
      "src": "img/ask-your-mother/2.jpg",
-     "alt": "ask your mother crewneck, Blue Spruce"
+     "alt": "ask your mother crewneck, Pepper"
     },
     {
      "src": "img/ask-your-mother/3.jpg",
@@ -749,15 +749,15 @@
     },
     {
      "src": "img/ask-your-mother/4.jpg",
-     "alt": "ask your mother crewneck, Pepper"
+     "alt": "ask your mother crewneck, Blue Spruce"
     },
     {
      "src": "img/ask-your-mother/5.jpg",
-     "alt": "ask your mother crewneck, Pepper"
+     "alt": "ask your mother crewneck, Blue Spruce"
     },
     {
      "src": "img/ask-your-mother/6.jpg",
-     "alt": "ask your mother crewneck, Pepper"
+     "alt": "ask your mother crewneck, Blue Spruce"
     }
    ],
    "variants": [
