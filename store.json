@@ -348,14 +348,14 @@
    ],
    "variants": [
     {
-     "id": 5559475524,
+     "id": 5559529476,
      "label": "Dark Green",
      "options": {
       "colour": "Dark Green"
      }
     },
     {
-     "id": 5559475525,
+     "id": 5559529477,
      "label": "Duck Brown",
      "options": {
       "colour": "Duck Brown"
@@ -447,14 +447,14 @@
    ],
    "variants": [
     {
-     "id": 5559475633,
+     "id": 5559529575,
      "label": "Light Grey",
      "options": {
       "colour": "Light Grey"
      }
     },
     {
-     "id": 5559475634,
+     "id": 5559529576,
      "label": "Natural",
      "options": {
       "colour": "Natural"
@@ -762,7 +762,7 @@
    ],
    "variants": [
     {
-     "id": 5559476052,
+     "id": 5559529650,
      "label": "Blue Spruce / S",
      "options": {
       "colour": "Blue Spruce",
@@ -770,7 +770,7 @@
      }
     },
     {
-     "id": 5559476054,
+     "id": 5559529651,
      "label": "Blue Spruce / M",
      "options": {
       "colour": "Blue Spruce",
@@ -778,7 +778,7 @@
      }
     },
     {
-     "id": 5559476056,
+     "id": 5559529652,
      "label": "Blue Spruce / L",
      "options": {
       "colour": "Blue Spruce",
@@ -786,7 +786,7 @@
      }
     },
     {
-     "id": 5559476057,
+     "id": 5559529653,
      "label": "Blue Spruce / XL",
      "options": {
       "colour": "Blue Spruce",
@@ -794,7 +794,7 @@
      }
     },
     {
-     "id": 5559476060,
+     "id": 5559529654,
      "label": "Blue Spruce / 2XL",
      "options": {
       "colour": "Blue Spruce",
@@ -802,7 +802,7 @@
      }
     },
     {
-     "id": 5559476061,
+     "id": 5559529655,
      "label": "Pepper / S",
      "options": {
       "colour": "Pepper",
@@ -810,7 +810,7 @@
      }
     },
     {
-     "id": 5559476062,
+     "id": 5559529656,
      "label": "Pepper / M",
      "options": {
       "colour": "Pepper",
@@ -818,7 +818,7 @@
      }
     },
     {
-     "id": 5559476063,
+     "id": 5559529657,
      "label": "Pepper / L",
      "options": {
       "colour": "Pepper",
@@ -826,7 +826,7 @@
      }
     },
     {
-     "id": 5559476067,
+     "id": 5559529658,
      "label": "Pepper / XL",
      "options": {
       "colour": "Pepper",
@@ -834,7 +834,7 @@
      }
     },
     {
-     "id": 5559476068,
+     "id": 5559529659,
      "label": "Pepper / 2XL",
      "options": {
       "colour": "Pepper",
@@ -842,7 +842,7 @@
      }
     },
     {
-     "id": 5559476070,
+     "id": 5559529660,
      "label": "Blue Jean / S",
      "options": {
       "colour": "Blue Jean",
@@ -850,7 +850,7 @@
      }
     },
     {
-     "id": 5559476071,
+     "id": 5559529661,
      "label": "Blue Jean / M",
      "options": {
       "colour": "Blue Jean",
@@ -858,7 +858,7 @@
      }
     },
     {
-     "id": 5559476073,
+     "id": 5559529662,
      "label": "Blue Jean / L",
      "options": {
       "colour": "Blue Jean",
@@ -866,7 +866,7 @@
      }
     },
     {
-     "id": 5559476074,
+     "id": 5559529663,
      "label": "Blue Jean / XL",
      "options": {
       "colour": "Blue Jean",
@@ -874,7 +874,7 @@
      }
     },
     {
-     "id": 5559476075,
+     "id": 5559529665,
      "label": "Blue Jean / 2XL",
      "options": {
       "colour": "Blue Jean",
