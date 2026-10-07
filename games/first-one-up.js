@@ -1,39 +1,56 @@
 // T05 — first one up mug
 // Four bedroom doors, one alarm. When it rings, turn it off before anyone else wakes
 // (under 300 ms). Three mornings in a row.
+import * as art from './_art.js';
+
 export default function mount(kit) {
-  const ink = kit.colors.ink || '#0D0D0E';
-  const accent = kit.colors.accent || '#00A862';
-  const muted = kit.colors.muted || '#6B6A66';
-  const NIGHT = '#1B2230', OAT = '#E8DFCF';
+  const ink = art.INK, accent = art.ACCENT, muted = art.MUTED;
   const REACT_MS = 300;
+  const head = art.heading(kit, 'first one up.', 'wait for the ring, then be first');
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);
-  const bg = kit.svg('rect', { x: 0, y: 0, width: 1000, height: 1000, fill: NIGHT });
-  svg.append(bg);
-  const doors = [0, 1, 2, 3].map((i) => {
-    const x = 90 + i * 210;
-    const g = kit.svg('g');
-    g.append(kit.svg('rect', { x, y: 380, width: 160, height: 420, rx: 8, fill: '#2a3347' }));
-    g.append(kit.svg('circle', { cx: x + 130, cy: 600, r: 7, fill: muted }));
-    return g;
-  });
-  svg.append(...doors);
-  const alarm = kit.svg('g');
-  const clockBody = kit.svg('circle', { cx: 500, cy: 230, r: 80, fill: '#fff' });
-  const clockFace = kit.svg('text', { x: 500, y: 250, 'text-anchor': 'middle', 'font-size': 60, fill: ink });
-  alarm.append(clockBody, clockFace);
-  svg.append(alarm);
-  const caption = kit.svg('text', { x: 500, y: 850, 'text-anchor': 'middle', 'font-size': 28, fill: '#fff', 'font-family': 'var(--display)', 'font-weight': 600 });
+
+  const r = art.room(kit, { wall: art.NIGHT, floor: art.shade(art.NIGHT, -0.08), floorY: 780, window: { x: 54, y: 150, w: 140, h: 170, night: true } });
+  svg.append(r.el);
+
+  // a rug in front of the doors
+  svg.append(kit.svg('rect', { x: 230, y: 800, width: 540, height: 110, rx: 16, fill: art.shade(art.NIGHT, 0.16), opacity: 0.5 }));
+  svg.append(kit.svg('rect', { x: 250, y: 818, width: 500, height: 74, rx: 10, fill: 'none', stroke: art.shade(art.NIGHT, 0.3), 'stroke-width': 3, opacity: 0.4 }));
+
+  // a light switch on the wall
+  svg.append(kit.svg('rect', { x: 900, y: 360, width: 34, height: 48, rx: 6, fill: '#2a3347' }));
+  svg.append(kit.svg('rect', { x: 908, y: 368, width: 18, height: 10, rx: 3, fill: art.shade('#2a3347', 0.25) }));
+
+  // four bedroom doors with frames and brass handles
+  const doorXs = [100, 320, 540, 760];
+  const doors = doorXs.map((x, i) => art.door(kit, x, 360, { w: 170, h: 410, color: '#2a3347', handleSide: i % 2 ? -1 : 1 }));
+  doors.forEach((d) => svg.append(d.el));
+  // warm light that can spill from under a door on a fail
+  const spill = doorXs.map((x) => kit.svg('rect', { x: x + 6, y: 762, width: 158, height: 14, fill: art.BUTTER, opacity: 0 }));
+  spill.forEach((s) => svg.append(s));
+
+  // the alarm clock on a small bedside table in the hallway
+  const tableX = 500, tableY = 780;
+  const tbl = art.table(kit, tableX, tableY, { w: 150, h: 16, legH: 80, color: '#5A6372' });
+  svg.append(tbl);
+  const clock = kit.svg('g', { transform: `translate(${tableX} ${tableY - 96})` });
+  clock.append(kit.svg('circle', { cx: -34, cy: -32, r: 13, fill: muted }));
+  clock.append(kit.svg('circle', { cx: 34, cy: -32, r: 13, fill: muted }));
+  const clockBody = kit.svg('circle', { cx: 0, cy: 0, r: 46, fill: '#fff' });
+  const clockFace = kit.svg('text', { x: 0, y: 8, 'text-anchor': 'middle', 'font-size': 30, fill: ink });
+  clock.append(clockBody, clockFace);
+  svg.append(clock);
+
+  const caption = kit.svg('text', { x: 500, y: 232, 'text-anchor': 'middle', 'font-size': 22, fill: '#fff', 'font-family': 'var(--display)', 'font-weight': 600 });
   svg.append(caption);
-  const dots = [0, 1, 2].map((i) => kit.svg('circle', { cx: 440 + i * 60, cy: 920, r: 9, fill: 'none', stroke: '#fff', 'stroke-opacity': 0.35, 'stroke-width': 3 }));
+  const dots = [0, 1, 2].map((i) => kit.svg('circle', { cx: 460 + i * 40, cy: 935, r: 7, fill: 'none', stroke: '#fff', 'stroke-opacity': 0.4, 'stroke-width': 3 }));
   svg.append(...dots);
 
-  const btn = kit.el('button', { class: 'g-btn solid', text: 'ready', style: { position: 'absolute', left: '50%', bottom: '6%', transform: 'translateX(-50%)' } });
+  const btn = kit.el('button', { class: 'g-btn solid', text: 'ready', style: { position: 'absolute', left: '50%', bottom: '5%', transform: 'translateX(-50%)' } });
   kit.stage.append(btn);
 
-  let streak = 0, waiting = false, ringAt = 0, doorOpening = -1;
+  let streak = 0, waiting = false, ringAt = 0, started = false;
 
   function nightDraw() {
     clockFace.textContent = '';
@@ -41,14 +58,17 @@ export default function mount(kit) {
     caption.textContent = 'asleep. everyone.';
     btn.textContent = 'ready';
     btn.disabled = false;
+    spill.forEach((s) => s.setAttribute('opacity', 0));
   }
   nightDraw();
   kit.status('0/3 mornings');
 
   kit.on(btn, 'click', handleClick);
+  kit.on(window, 'keydown', (e) => { if (e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); handleClick(); } });
 
   function handleClick() {
-    if (!waiting) { // first click of a round: arm it
+    if (!started) { started = true; head.hide(); }
+    if (!waiting) {
       waiting = true;
       btn.disabled = true;
       caption.textContent = 'quiet…';
@@ -57,14 +77,14 @@ export default function mount(kit) {
         ringAt = performance.now();
         clockBody.setAttribute('fill', accent);
         clockFace.setAttribute('fill', '#fff');
-        clockFace.textContent = '⏰';
+        clockFace.textContent = '!';
         caption.textContent = 'now.';
         btn.disabled = false;
         btn.textContent = 'off';
       });
       return;
     }
-    if (!ringAt) return; // still waiting for the ring, button is disabled anyway
+    if (!ringAt) return;
     const dt = performance.now() - ringAt;
     ringAt = 0;
     if (dt <= REACT_MS) succeed();
@@ -77,7 +97,13 @@ export default function mount(kit) {
     streak++;
     kit.status(`${streak}/3 mornings`);
     caption.textContent = 'off. nobody woke up.';
-    if (streak >= 3) { kit.after(500, () => kit.win('first one up. every time.')); return; }
+    if (streak >= 3) {
+      kit.after(500, () => {
+        art.winBeat(kit, 'first one up.');
+        kit.after(1100, () => kit.win('first one up. every time.'));
+      });
+      return;
+    }
     kit.after(900, reset);
   }
 
@@ -86,6 +112,8 @@ export default function mount(kit) {
     dots.forEach((d) => { d.setAttribute('fill', 'none'); d.setAttribute('stroke', '#fff'); });
     kit.status('0/3 mornings');
     caption.textContent = msg;
+    const s = spill[Math.floor(Math.random() * spill.length)];
+    s.setAttribute('opacity', 0.75);
     waiting = false; ringAt = 0;
     kit.after(900, reset);
   }

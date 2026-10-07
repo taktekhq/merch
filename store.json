@@ -31,6 +31,10 @@
    "price": 3800,
    "images": [
     {
+     "src": "img/told-you-so/detail.jpg",
+     "alt": "told you so. cap: the embroidery, close up"
+    },
+    {
      "src": "img/told-you-so/1.jpg",
      "alt": "told you so. cap, Black"
     },
@@ -40,14 +44,6 @@
     },
     {
      "src": "img/told-you-so/3.jpg",
-     "alt": "told you so. cap, Black"
-    },
-    {
-     "src": "img/told-you-so/4.jpg",
-     "alt": "told you so. cap, Black"
-    },
-    {
-     "src": "img/told-you-so/5.jpg",
      "alt": "told you so. cap, Black"
     }
    ],
@@ -414,7 +410,7 @@
    ],
    "variants": [
     {
-     "id": 5559033939,
+     "id": 5559094057,
      "label": "",
      "options": {}
     }
@@ -1299,35 +1295,35 @@
    ],
    "variants": [
     {
-     "id": 5558996731,
+     "id": 5559094289,
      "label": "S",
      "options": {
       "size": "S"
      }
     },
     {
-     "id": 5558996743,
+     "id": 5559094290,
      "label": "M",
      "options": {
       "size": "M"
      }
     },
     {
-     "id": 5558996746,
+     "id": 5559094292,
      "label": "L",
      "options": {
       "size": "L"
      }
     },
     {
-     "id": 5558996749,
+     "id": 5559094293,
      "label": "XL",
      "options": {
       "size": "XL"
      }
     },
     {
-     "id": 5558996751,
+     "id": 5559094294,
      "label": "2XL",
      "options": {
       "size": "2XL"
@@ -1388,7 +1384,7 @@
    ],
    "variants": [
     {
-     "id": 5558996896,
+     "id": 5559094357,
      "label": "",
      "options": {}
     }
