@@ -29,8 +29,8 @@ function piecePath(w, h, edges) {
 
 export default function mount(kit) {
   const IVORY = '#F7F5F1', ink = art.INK, accent = art.ACCENT, card = art.CARD;
-  const SIZE = 3, BOARD = 760, CELL = BOARD / SIZE, GAP = 14, TILE = CELL - GAP, BLANK = SIZE * SIZE - 1, DOT_HOME = 4;
-  const OX = (1000 - BOARD) / 2, OY = (1000 - BOARD) / 2 + 40;
+  const SIZE = 3, BOARD = 700, CELL = BOARD / SIZE, GAP = 14, TILE = CELL - GAP, BLANK = SIZE * SIZE - 1, DOT_HOME = 4;
+  const OX = (1000 - BOARD) / 2, OY = (1000 - BOARD) / 2 + 94;
   const head = art.heading(kit, 'the last piece.', 'slide the pieces home');
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });

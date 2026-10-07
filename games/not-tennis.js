@@ -9,6 +9,10 @@ export default function mount(kit) {
   const PADDLE_W = 180, PADDLE_Y = 860, PADDLE_H = 26;
   const BALL_R = 17;
   const head = art.heading(kit, "it's not tennis.", 'rally — ten in a row');
+  // the heading sits over the dark wall: colour it by hand until heading() grows the option
+  const [hLabel, hHint] = head.el.children;
+  hLabel.style.color = '#F2EFE8';
+  hHint.style.color = '#C9D6CE';
 
   const svg = kit.svg('svg', { viewBox: '0 0 1000 1000' });
   kit.stage.append(svg);
