@@ -78,16 +78,22 @@ const sway = (kit, el, { amp = 2, period = 2600, ox = 0, oy = 0, base = '', axis
 // ---------------------------------------------------------------------------------------
 // The top framing every stage uses: the product's line as a small heading (green dot full
 // stop) and one short mono hint under it. Returns { hide() } — call hide() on first input.
-export function heading(kit, line, hint) {
+// Pass `{ dark: true }` for a scene with a dark/night background (the heading is drawn in
+// ink by default and otherwise vanishes): the line goes paper-coloured, the hint a muted
+// light tone, green dot unchanged. `color`/`hintColor` override either explicitly.
+export function heading(kit, line, hint, opts = {}) {
+  const dark = !!opts.dark;
+  const textColor = opts.color || (dark ? PAPER : INK);
+  const hintColor = opts.hintColor || (dark ? 'rgba(247,245,241,0.6)' : MUTED);
   const wrap = kit.el('div', { style: { position: 'absolute', left: '0', right: '0', top: '5%', textAlign: 'center', pointerEvents: 'none' } });
   const clean = line.replace(/\.\s*$/, '');
   const h = kit.el('div', {
     class: 'g-mono',
-    style: { fontFamily: 'var(--display)', fontWeight: '600', fontSize: 'clamp(16px, 3.4vw, 22px)', color: INK, letterSpacing: '-0.01em' },
+    style: { fontFamily: 'var(--display)', fontWeight: '600', fontSize: 'clamp(16px, 3.4vw, 22px)', color: textColor, letterSpacing: '-0.01em' },
   });
   const dot = kit.el('span', { style: { display: 'inline-block', width: '0.16em', height: '0.16em', borderRadius: '50%', background: ACCENT, marginLeft: '0.12em', marginBottom: '0.03em' } });
   h.append(clean, dot);
-  const hintEl = kit.el('div', { class: 'g-mono', text: hint || '', style: { fontSize: '12px', color: MUTED, marginTop: '6px', transition: 'opacity .4s ease' } });
+  const hintEl = kit.el('div', { class: 'g-mono', text: hint || '', style: { fontSize: '12px', color: hintColor, marginTop: '6px', transition: 'opacity .4s ease' } });
   wrap.append(h, hintEl);
   kit.stage.append(wrap);
   return { el: wrap, hide: () => { hintEl.style.opacity = '0'; } };
