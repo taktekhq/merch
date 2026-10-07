@@ -10,7 +10,7 @@ export default function mount(kit) {
     { s: '♠', col: INK, red: false }, { s: '♥', col: '#C23B3B', red: true },
     { s: '♦', col: '#C23B3B', red: true }, { s: '♣', col: INK, red: false },
   ];
-  const head = art.heading(kit, 'just one more.', 'higher or lower — walk away while you\'re ahead');
+  const head = art.heading(kit, 'just one more.', 'higher or lower — walk away while you\'re ahead', { dark: true });
 
   const freshDeck = () => {
     const d = [];
