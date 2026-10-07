@@ -1,0 +1,226 @@
+{
+ "id": "taktek",
+ "name": "Taktek merch",
+ "url": "https://taktek.io/merch/",
+ "currency": "USD",
+ "checkout": null,
+ "debug": true,
+ "brand": {
+  "paper": "#F7F5F1",
+  "ink": "#0D0D0E",
+  "accent": "#00A862",
+  "muted": "#6B6A66",
+  "fontDisplay": "\"Space Grotesk\", system-ui, sans-serif",
+  "fontMono": "\"JetBrains Mono\", ui-monospace, monospace",
+  "fontsHref": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+ },
+ "printfulStoreId": 18869090,
+ "headline": "You can't just buy these.",
+ "intro": "Twenty things from ordinary life at home. Each one has to be won first. Win it, and it's yours to buy.",
+ "homeLink": {
+  "href": "https://taktek.io/",
+  "label": "taktek.io"
+ },
+ "pieces": [
+  {
+   "slug": "told-you-so",
+   "name": "told you so. cap",
+   "line": "told you so.",
+   "challenge": "Say it at exactly the right moment, three times.",
+   "game": "games/told-you-so.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "spare-key",
+   "name": "the spare key hoodie",
+   "line": "the spare key was never spare.",
+   "challenge": "Find the spare key.",
+   "game": "games/spare-key.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "five-more-minutes",
+   "name": "five more minutes blanket",
+   "line": "five more minutes.",
+   "challenge": "Snooze, then don't move for five real minutes.",
+   "game": "games/five-more-minutes.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "fix-it-this-weekend",
+   "name": "fix it this weekend apron",
+   "line": "i'll fix it this weekend.",
+   "challenge": "Opens on weekends only, your time.",
+   "game": "games/fix-it-this-weekend.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "first-one-up",
+   "name": "first one up mug",
+   "line": "first one up.",
+   "challenge": "Turn the alarm off before anyone else wakes. Three mornings.",
+   "game": "games/first-one-up.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "food-at-home",
+   "name": "food at home tote",
+   "line": "we have food at home.",
+   "challenge": "Let everything roll past. Take only the tote.",
+   "game": "games/food-at-home.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "on-my-way",
+   "name": "on my way tee",
+   "line": "on my way.",
+   "challenge": "Ten seconds to find your keys, phone, wallet and sunglasses.",
+   "game": "games/on-my-way.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "lock-the-door",
+   "name": "did you lock the door beanie",
+   "line": "did you lock the door?",
+   "challenge": "Lock up, drive off, and go back to check.",
+   "game": "games/lock-the-door.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "ask-your-mother",
+   "name": "ask your mother crewneck",
+   "line": "ask your mother.",
+   "challenge": "Break the loop.",
+   "game": "games/ask-your-mother.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "not-lost",
+   "name": "we're not lost bucket hat",
+   "line": "we're not lost.",
+   "challenge": "Get out of the maze without asking for directions.",
+   "game": "games/not-lost.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "leave-the-light-on",
+   "name": "leave the light on candle",
+   "line": "leave the light on.",
+   "challenge": "Keep the flame alive for thirty seconds.",
+   "game": "games/leave-the-light-on.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "just-one-more",
+   "name": "just one more cards",
+   "line": "just one more.",
+   "challenge": "Higher or lower. Walk away while you're ahead.",
+   "game": "games/just-one-more.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "ill-dry",
+   "name": "i'll dry towel",
+   "line": "i'll dry.",
+   "challenge": "Dry twelve plates in a row.",
+   "game": "games/ill-dry.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "one-sec",
+   "name": "one sec clock",
+   "line": "one sec.",
+   "challenge": "Stop the clock at exactly one second.",
+   "game": "games/one-sec.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "wifi-password",
+   "name": "wifi password magnets",
+   "line": "the wifi password is on the fridge.",
+   "challenge": "Find the wifi password on the fridge.",
+   "game": "games/wifi-password.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "the-good-side",
+   "name": "the good side pillow",
+   "line": "the good side.",
+   "challenge": "Keep the pillow cool all night.",
+   "game": "games/the-good-side.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "thermostat",
+   "name": "thermostat sweater",
+   "line": "who touched the thermostat.",
+   "challenge": "Hold the house at 22° for twenty seconds.",
+   "game": "games/thermostat.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "just-a-splash",
+   "name": "just a splash glass",
+   "line": "just a splash.",
+   "challenge": "Pour a splash. Just a splash.",
+   "game": "games/just-a-splash.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "not-tennis",
+   "name": "it's not tennis paddles",
+   "line": "it's not tennis.",
+   "challenge": "Ten returns in a row.",
+   "game": "games/not-tennis.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  },
+  {
+   "slug": "the-last-piece",
+   "name": "the last piece puzzle",
+   "line": "the last piece.",
+   "challenge": "Solve the puzzle.",
+   "game": "games/the-last-piece.js",
+   "price": 0,
+   "images": [],
+   "variants": []
+  }
+ ]
+}
